@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,8 +12,8 @@
       color: #222;
     }
     header {
-      background: #043A7A;
-      color: white;
+      background: #f9f9f9;
+      color: navy;
       padding: 1.5rem 1rem;
       text-align: center;
       display: flex;
@@ -34,7 +33,7 @@
       text-align: center;
     }
     nav a {
-      color: white;
+      color: gold;
       text-decoration: none;
       margin: 0 1rem;
       font-weight: 600;
@@ -49,62 +48,89 @@
     }
     .product-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 2rem;
     }
-    .product {
-      background: white;
+    .product-card {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
       padding: 1rem;
-      border-radius: 6px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
       text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
-    .product img {
-      max-width: 100%;
-      height: auto;
+    .product-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: contain;
+      margin-bottom: 0.5rem;
     }
-    .product h3 {
-      margin: 0.6rem 0 0.3rem;
+    .coming-soon {
+      height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f0f0f0;
+      color: #999;
+      font-weight: bold;
+      font-size: 1.1rem;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 1rem;
+      color: navy;
+      border-top: 1px solid #e0e0e0;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
+
 <header>
-  <img src="Flag_of_the_United_States.svg" alt="USA Flag" class="flag-icon">
-  <h1>Sicilian-American Flag Merch</h1>
-  <img src="sicilian-american-flag.png" alt="Sicilian-American Flag" class="flag-icon">
+  <img src="sicilian-american-flag.png" class="flag-icon" alt="Sicilian-American Flag">
+  <h1>Sicilian-American Flag</h1>
+  <img src="Flag_of_the_United_States.svg" class="flag-icon" alt="United States Flag">
 </header>
+
 <nav>
   <a href="index.html">Home</a>
-  <a href="merch.html">Merch Store</a>
+  <a href="merch.html">Merch&nbsp;Store</a>
 </nav>
+
 <section>
-  <h2>Shop Flag Merchandise</h2>
-  <p>Show your pride with flags, pins, shirts, and more featuring the official Sicilian-American flag with the Christian sunburst cross.</p>
+  <h2>Official Merch – Coming Soon!</h2>
+  <p>Celebrate your heritage and support the project with official Sicilian-American Flag gear.</p>
 
   <div class="product-grid">
-    <div class="product">
-      <img src="images/flag.png" alt="Flag">
-      <h3>3x5 Fabric Flag</h3>
-      <p>$19.95</p>
+    <div class="product-card">
+      <div class="coming-soon">Image Coming Soon</div>
+      <h3>3x5 ft Outdoor Flag</h3>
+      <p>Bold colors, weather-resistant. Perfect for display.</p>
     </div>
-    <div class="product">
-      <img src="images/pin.png" alt="Pin">
-      <h3>Lapel Pin</h3>
-      <p>$4.95</p>
-    </div>
-    <div class="product">
-      <img src="images/shirt.png" alt="Shirt">
+    <div class="product-card">
+      <div class="coming-soon">Image Coming Soon</div>
       <h3>T-Shirt</h3>
-      <p>$14.95</p>
+      <p>Soft cotton tee with Sicilian-American emblem.</p>
     </div>
-    <div class="product">
-      <img src="images/hat.png" alt="Hat">
-      <h3>Cap</h3>
-      <p>$12.95</p>
+    <div class="product-card">
+      <div class="coming-soon">Image Coming Soon</div>
+      <h3>Enamel Pin</h3>
+      <p>Small pin featuring the flag design. Great for jackets, bags, or hats.</p>
+    </div>
+    <div class="product-card">
+      <div class="coming-soon">Image Coming Soon</div>
+      <h3>Cap / Hat</h3>
+      <p>Classic baseball cap style with embroidered flag patch.</p>
     </div>
   </div>
 </section>
+
+<footer>
+  Designed by Michael J. Puma · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY‑SA 4.0</a>
+</footer>
+
 </body>
 </html>
