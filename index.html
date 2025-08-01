@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,86 +6,67 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;margin:0;color:#222;background:#fdfdfd;}
-.banner{display:flex;justify-content:space-between;align-items:center;padding:0.5rem 1rem;background-color:#f8f8f8;}
-.banner img{height:40px;}
-header{background:#043A7A;color:#fff;padding:2rem 1rem;text-align:center;}
-header h1{margin:0;font-size:2.2rem;line-height:1.2;}
-header p{margin:0.5rem 0 0;font-size:1.05rem;}
-nav{margin-top:0.8rem;}
+header{background:#043A7A;color:#fff;padding:1rem;text-align:center;position:relative;}
+header img.flag-icon{height:40px;position:absolute;top:10px;}
+header img.left{left:10px;}
+header img.right{right:10px;}
+header h1{margin:0;font-size:2.2rem;}
 nav a{color:#fff;text-decoration:none;margin:0 0.8rem;font-weight:600;}
 nav a:hover{text-decoration:underline;}
 section{max-width:860px;margin:0 auto;padding:1.5rem 1rem;}
-.flag-box{max-width:720px;margin:1rem auto;}
-.flag-box img{width:100%;height:auto;box-shadow:0 3px 10px rgba(0,0,0,0.25);}
-table{border-collapse:collapse;width:100%;margin:1rem 0;}
+img.main-flag{width:100%;max-width:720px;display:block;margin:1rem auto;box-shadow:0 3px 10px rgba(0,0,0,0.25);}
+img.carousel-img{width:100%;max-width:720px;margin:1rem auto;display:block;}
+.caption{font-size:0.9rem;text-align:center;color:#555;margin-bottom:2rem;}
+table{border-collapse:collapse;width:100%;margin:1.5rem 0;}
 th,td{border:1px solid #ccc;padding:0.6rem;}
 th{background:#f3f3f3;text-align:left;}
 .button{display:inline-block;margin:0.7rem 0.6rem 0 0;padding:0.6rem 1rem;background:#043A7A;color:#fff;border-radius:4px;text-decoration:none;}
-.button:hover{background:#255ea3;}
+.button:hover{background:#275a9b;}
 footer{font-size:0.9rem;text-align:center;padding:1rem;color:#666;border-top:1px solid #e0e0e0;margin-top:2rem;}
-.carousel{display:flex;flex-direction:column;align-items:center;margin:2rem auto;}
-.carousel img{max-width:100%;height:auto;margin-bottom:0.5rem;box-shadow:0 2px 8px rgba(0,0,0,0.2);}
-.carousel p{font-size:0.9rem;text-align:center;color:#555;}
 </style>
 </head>
 <body>
-
-<div class="banner">
-  <img src="Flag_of_the_United_States.svg" alt="USA Flag">
-  <img src="sicilian-american-flag.png" alt="Sicilian-American Flag">
-</div>
-
 <header>
+  <img src="us-flag.png" class="flag-icon left" alt="USA flag">
+  <img src="sicilian-american-flag.png" class="flag-icon right" alt="Sicilian-American flag">
   <h1>Sicilian‑American Flag</h1>
-  <p><em>Heritage · Faith · Freedom</em></p>
   <nav>
     <a href="index.html">Home</a>
-    <a href="merch.html">Merch&nbsp;Store</a>
+    <a href="merch.html">Merch Store</a>
   </nav>
 </header>
 
-<section class="flag-box">
-  <img src="sicilian-american-flag.png" alt="Sicilian‑American Flag">
-</section>
-
 <section>
-  <p><em>“Uniting Sicilian tradition with American liberty, this flag celebrates cultural roots, Christian heritage, and the journey across oceans in pursuit of freedom.”</em></p>
+  <img src="sicilian-american-flag.png" alt="Sicilian‑American Flag" class="main-flag">
+
+  <p><em>“Uniting Sicilian ingenuity with American opportunity, this flag celebrates heritage, creativity, and the freedom to thrive.”</em></p>
+
+  <p>The Sicilian‑American flag blends the island’s enduring heritage with the freedoms secured across the Atlantic. A deep American‑blue canton frames a radiant sunburst with cross—evoking the divine light and Christian tradition found in Sicilian churches. Nine blue, white, and red stripes represent the nine provinces of Sicily. The red stripe beneath the canton honors Palermo, Sicily’s historic capital and revolutionary heart.</p>
+
+  <p>This design honors centuries of maritime tradition, from Sicily’s fishing culture to the immigrant journey across the Atlantic. The sunburst draws inspiration from Baroque altarpieces in <strong>Palermo</strong>, <strong>Ragusa</strong>, and <strong>Noto</strong>, where radiant light symbolized divine presence.</p>
 
   <h2>Symbolism and Story</h2>
   <table>
     <tr><th>Element</th><th>Meaning</th></tr>
-    <tr><td><strong>Blue canton</strong></td><td>American liberty and Sicily’s maritime past—representing the transatlantic journey and our oceanic identity</td></tr>
-    <tr><td><strong>White sunburst with cross</strong></td><td>Draws from Baroque altarpieces in Palermo, Ragusa, and Noto—symbolizing divine light, the Holy Trinity, and Sicily’s Christian legacy dating back to apostolic times</td></tr>
-    <tr><td><strong>Nine horizontal stripes</strong></td><td>Each stripe represents one of the nine provinces of Sicily, with red highlighting Palermo as the cultural and revolutionary heart</td></tr>
-    <tr><td><strong>Red stripe beneath canton</strong></td><td>Connection to Palermo, spiritual center of Sicilian resistance and artistic renewal</td></tr>
+    <tr><td><strong>Blue canton</strong></td><td>American liberty; the sea that links past and future</td></tr>
+    <tr><td><strong>Sunburst with cross</strong></td><td>Christian heritage, divine light, and the Holy Trinity</td></tr>
+    <tr><td><strong>Nine horizontal stripes</strong></td><td>The nine Sicilian provinces; red stripe for Palermo as heart of the island</td></tr>
   </table>
 
-  <div class="carousel">
-    <img src="palermo-church.jpg" alt="Baroque altar in Palermo">
-    <p>Palermo’s Chiesa del Gesù—sunburst above the tabernacle</p>
-    <img src="ragusa-san-giuseppe.jpg" alt="San Giuseppe church in Ragusa">
-    <p>Ragusa’s San Giuseppe—radiant domes and divine light</p>
-    <img src="noto-cathedral.jpg" alt="Baroque art in Noto Cathedral">
-    <p>Noto’s Cathedral—Baroque illumination and divine grandeur</p>
-  </div>
+  <img src="palermo-gesu.jpg" class="carousel-img" alt="Church of the Gesù, Palermo">
+  <p class="caption">Palermo’s Church of the Gesù (Casa Professa): stucco sunbursts radiate behind the altar. Source: World of Interiors</p>
+
+  <img src="ragusa-san-giuseppe.jpg" class="carousel-img" alt="San Giuseppe, Ragusa Ibla">
+  <p class="caption">Baroque light and dome in San Giuseppe, Ragusa Ibla. Source: Wikimedia Commons</p>
 
   <a class="button" href="sicilian-american-flag.svg" download>Download SVG</a>
   <a class="button" href="sicilian-american-flag.png" download>Download PNG</a>
-  <a class="button" href="merch.html">Merch Store</a>
-
-  <h2>Usage & Licensing</h2>
-  <p>This flag is released under <strong>Creative Commons CC BY‑SA 4.0</strong>. You may use, remix, and share it—including commercially—if you:</p>
-  <ul>
-    <li>Credit the “Sicilian‑American Flag Initiative”</li>
-    <li>Use the same license on derivative works</li>
-    <li>Do not recolor the central elements</li>
-  </ul>
-  <p>For full openness, you may also use it under <strong>CC 0</strong>.</p>
+  <a class="button" href="merch.html">Visit Merch Store</a>
 </section>
 
 <footer>
-  Designed by Michael J. Puma · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY‑SA 4.0</a> (or CC 0)
+  Designed by Michael J. Puma · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY‑SA 4.0</a> (or <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">CC 0</a>)<br>
+  Church images shown for educational and cultural reference. Sources: World of Interiors, Wikimedia Commons.
 </footer>
-
 </body>
 </html>
