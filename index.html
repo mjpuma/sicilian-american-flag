@@ -7,6 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;margin:0;color:#222;background:#fdfdfd;}
+.banner{display:flex;justify-content:space-between;align-items:center;padding:0.5rem 1rem;background-color:#f8f8f8;}
+.banner img{height:40px;}
 header{background:#043A7A;color:#fff;padding:2rem 1rem;text-align:center;}
 header h1{margin:0;font-size:2.2rem;line-height:1.2;}
 header p{margin:0.5rem 0 0;font-size:1.05rem;}
@@ -20,14 +22,23 @@ table{border-collapse:collapse;width:100%;margin:1rem 0;}
 th,td{border:1px solid #ccc;padding:0.6rem;}
 th{background:#f3f3f3;text-align:left;}
 .button{display:inline-block;margin:0.7rem 0.6rem 0 0;padding:0.6rem 1rem;background:#043A7A;color:#fff;border-radius:4px;text-decoration:none;}
-.button:hover{background:#285a9c;}
+.button:hover{background:#255ea3;}
 footer{font-size:0.9rem;text-align:center;padding:1rem;color:#666;border-top:1px solid #e0e0e0;margin-top:2rem;}
+.carousel{display:flex;flex-direction:column;align-items:center;margin:2rem auto;}
+.carousel img{max-width:100%;height:auto;margin-bottom:0.5rem;box-shadow:0 2px 8px rgba(0,0,0,0.2);}
+.carousel p{font-size:0.9rem;text-align:center;color:#555;}
 </style>
 </head>
 <body>
+
+<div class="banner">
+  <img src="usa-flag.png" alt="USA Flag">
+  <img src="sicilian-american-flag.png" alt="Sicilian-American Flag">
+</div>
+
 <header>
   <h1>Sicilian‑American Flag</h1>
-  <p><em>Heritage · Faith · Freedom</em></p>
+  <p><em>Heritage · Faith · Freedom</em></p>
   <nav>
     <a href="index.html">Home</a>
     <a href="merch.html">Merch&nbsp;Store</a>
@@ -35,43 +46,47 @@ footer{font-size:0.9rem;text-align:center;padding:1rem;color:#666;border-top:1px
 </header>
 
 <section class="flag-box">
-  <img src="sicilian-american-flag.svg" alt="Sicilian‑American Flag">
+  <img src="sicilian-american-flag.png" alt="Sicilian‑American Flag">
 </section>
 
 <section>
-  <p><em>“Uniting Sicilian faith and ingenuity with American opportunity, this flag celebrates our journey across seas, across centuries, and toward freedom.”</em></p>
+  <p><em>“Uniting Sicilian tradition with American liberty, this flag celebrates cultural roots, Christian heritage, and the journey across oceans in pursuit of freedom.”</em></p>
 
-  <p>This modern flag draws on rich layers of Sicilian history and Christian symbolism. A deep navy canton reflects the American ideal of liberty, while also invoking Sicily’s ancient maritime culture — from Greek seafarers and Phoenician traders to generations of fishermen and immigrants who crossed the Atlantic. In the canton’s center, a Baroque-style white sunburst radiates with divine light, drawing inspiration from church altarpieces in Palermo, Ragusa, and Noto. A white cross at the center signals Christian heritage, unity, and hope.</p>
-
-  <p>The body of the flag features <strong>nine horizontal stripes</strong> — a clear tribute to Sicily’s nine historic provinces: Palermo, Catania, Messina, Agrigento, Trapani, Siracusa, Enna, Ragusa, and Caltanissetta. The red central stripe honors Palermo, long the cultural and political heart of the island. The blue and white stripes reflect both Sicilian and American identities — sea, sky, faith, and freedom — and the journey between two homelands.</p>
-
-  <h2>Symbolism at a Glance</h2>
+  <h2>Symbolism and Story</h2>
   <table>
     <tr><th>Element</th><th>Meaning</th></tr>
-    <tr><td><strong>Navy blue canton</strong></td><td>Liberty and justice (U.S. heritage); maritime identity and ancient seafaring culture (Sicily)</td></tr>
-    <tr><td><strong>Baroque-style white sunburst</strong></td><td>Spiritual illumination and Sicilian Catholic heritage; inspired by church art in Palermo and Ragusa</td></tr>
-    <tr><td><strong>White Christian cross</strong></td><td>Faith, hope, and historical Christian identity across centuries</td></tr>
-    <tr><td><strong>Nine horizontal stripes</strong></td><td>The nine provinces of Sicily; a unifying structure across diversity</td></tr>
-    <tr><td><strong>Red central stripe</strong></td><td>Palermo — the symbolic and cultural heart of Sicily</td></tr>
-    <tr><td><strong>Blue and white stripes</strong></td><td>Seafaring legacy, the immigrant journey to America, and the blending of identities</td></tr>
+    <tr><td><strong>Blue canton</strong></td><td>American liberty and Sicily’s maritime past—representing the transatlantic journey and our oceanic identity</td></tr>
+    <tr><td><strong>White sunburst with cross</strong></td><td>Draws from Baroque altarpieces in Palermo, Ragusa, and Noto—symbolizing divine light, the Holy Trinity, and Sicily’s Christian legacy dating back to apostolic times</td></tr>
+    <tr><td><strong>Nine horizontal stripes</strong></td><td>Each stripe represents one of the nine provinces of Sicily, with red highlighting Palermo as the cultural and revolutionary heart</td></tr>
+    <tr><td><strong>Red stripe beneath canton</strong></td><td>Connection to Palermo, spiritual center of Sicilian resistance and artistic renewal</td></tr>
   </table>
+
+  <div class="carousel">
+    <img src="palermo-church.jpg" alt="Baroque altar in Palermo">
+    <p>Palermo’s Chiesa del Gesù—sunburst above the tabernacle</p>
+    <img src="ragusa-san-giuseppe.jpg" alt="San Giuseppe church in Ragusa">
+    <p>Ragusa’s San Giuseppe—radiant domes and divine light</p>
+    <img src="noto-cathedral.jpg" alt="Baroque art in Noto Cathedral">
+    <p>Noto’s Cathedral—Baroque illumination and divine grandeur</p>
+  </div>
 
   <a class="button" href="sicilian-american-flag.svg" download>Download SVG</a>
   <a class="button" href="sicilian-american-flag.png" download>Download PNG</a>
   <a class="button" href="merch.html">Merch Store</a>
 
   <h2>Usage & Licensing</h2>
-  <p>The artwork is released under <strong>Creative Commons CC BY‑SA 4.0</strong>. You are free to share and remix it for any purpose—including commercial use—so long as you:</p>
+  <p>This flag is released under <strong>Creative Commons CC BY‑SA 4.0</strong>. You may use, remix, and share it—including commercially—if you:</p>
   <ul>
-    <li>Give appropriate credit to “Sicilian‑American Flag Initiative”.</li>
-    <li>License derivative works under the same terms.</li>
-    <li>Do not recolor or distort the core elements (blue canton, white sunburst with cross, 9 stripes with red central band). Scaling and layout for different formats is fine.</li>
+    <li>Credit the “Sicilian‑American Flag Initiative”</li>
+    <li>Use the same license on derivative works</li>
+    <li>Do not recolor the central elements</li>
   </ul>
-  <p>If you prefer complete public‑domain status, you may also use the file under <strong>CC 0</strong>. Pick whichever is more convenient for your project.</p>
+  <p>For full openness, you may also use it under <strong>CC 0</strong>.</p>
 </section>
 
 <footer>
   Designed by Michael J. Puma · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY‑SA 4.0</a> (or CC 0)
 </footer>
+
 </body>
 </html>
