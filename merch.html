@@ -2,82 +2,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Merch Store - Sicilian-American Flag</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #043A7A;
-            color: white;
-        }
-        header {
-            background-color: #043A7A;
-            padding: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .flag-icon {
-            height: 40px;
-        }
-        .title {
-            text-align: center;
-            flex-grow: 1;
-            font-size: 2.2rem;
-            font-weight: bold;
-        }
-        nav {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 1.2rem;
-        }
-        main {
-            padding: 0 2rem;
-        }
-        .item {
-            background-color: white;
-            color: black;
-            padding: 1rem;
-            margin: 1rem 0;
-            border-radius: 5px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Sicilian-American Flag Merch</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      margin: 0;
+      background: #e6f0ff;
+      color: #222;
+    }
+    header {
+      background: #043A7A;
+      color: white;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+    header img.flag-icon {
+      height: 40px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    nav {
+      margin: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .product {
+      background: white;
+      padding: 1rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+      text-align: center;
+    }
+    .product img {
+      max-width: 100%;
+      height: auto;
+    }
+    .product h3 {
+      margin: 0.6rem 0 0.3rem;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="Flag_of_the_United_States.svg" alt="USA Flag" class="flag-icon">
-        <div class="title">Sicilian-American Flag</div>
-        <img src="sicilian-american-flag.png" alt="Sicilian-American Flag" class="flag-icon">
-    </header>
+<header>
+  <img src="Flag_of_the_United_States.svg" alt="USA Flag" class="flag-icon">
+  <h1>Sicilian-American Flag Merch</h1>
+  <img src="sicilian-american-flag.png" alt="Sicilian-American Flag" class="flag-icon">
+</header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="merch.html">Merch Store</a>
+</nav>
+<section>
+  <h2>Shop Flag Merchandise</h2>
+  <p>Show your pride with flags, pins, shirts, and more featuring the official Sicilian-American flag with the Christian sunburst cross.</p>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="merch.html">Merch Store</a>
-    </nav>
-
-    <main>
-        <div class="item">
-            <h2>3x5 ft Outdoor Flag</h2>
-            <p>Durable polyester with vivid print. Two grommets for hanging. $25</p>
-        </div>
-        <div class="item">
-            <h2>Hat with Embroidered Flag</h2>
-            <p>Adjustable navy blue cap with stitched design. $20</p>
-        </div>
-        <div class="item">
-            <h2>T-Shirt (Various Sizes)</h2>
-            <p>Soft cotton tee in navy or white with flag print. $18</p>
-        </div>
-        <div class="item">
-            <h2>Lapel Pin</h2>
-            <p>Metal pin with glossy finish, approx. 1 inch wide. $8</p>
-        </div>
-    </main>
+  <div class="product-grid">
+    <div class="product">
+      <img src="images/flag.png" alt="Flag">
+      <h3>3x5 Fabric Flag</h3>
+      <p>$19.95</p>
+    </div>
+    <div class="product">
+      <img src="images/pin.png" alt="Pin">
+      <h3>Lapel Pin</h3>
+      <p>$4.95</p>
+    </div>
+    <div class="product">
+      <img src="images/shirt.png" alt="Shirt">
+      <h3>T-Shirt</h3>
+      <p>$14.95</p>
+    </div>
+    <div class="product">
+      <img src="images/hat.png" alt="Hat">
+      <h3>Cap</h3>
+      <p>$12.95</p>
+    </div>
+  </div>
+</section>
 </body>
 </html>
