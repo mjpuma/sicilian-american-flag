@@ -1,20 +1,18 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Sicilian-American Flag</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="favicon.ico">
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
       margin: 0;
-      background: #f3f7ff;
+      background: #fdf6ee;
       color: #222;
     }
     header {
-      background: #fff;
+      background: #f9f9f9;
       color: navy;
       padding: 1.5rem 1rem;
       text-align: center;
@@ -35,7 +33,7 @@
       text-align: center;
     }
     nav a {
-      color: navy;
+      color: gold;
       text-decoration: none;
       margin: 0 1rem;
       font-weight: 600;
@@ -48,19 +46,31 @@
       margin: 0 auto;
       padding: 2rem 1rem;
     }
-    .flag-box, .alt-flag {
+    .flag-box {
       max-width: 720px;
       margin: 1rem auto;
     }
-    .flag-box img, .alt-flag img {
+    .flag-box img {
       width: 100%;
       height: auto;
       box-shadow: 0 3px 10px rgba(0,0,0,0.25);
     }
-    .caption {
+    .alternate-flags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .alt-flag {
+      flex: 1 1 calc(50% - 1rem);
       text-align: center;
-      font-size: 0.95rem;
-      margin-top: 0.5rem;
+    }
+    .alt-flag img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
     }
     table {
       border-collapse: collapse;
@@ -120,21 +130,24 @@
   </table>
 
   <h2>Alternate Designs</h2>
-  <div class="alt-flag">
-    <img src="sicilian-american-flag-A.svg" alt="Flag Design A">
-    <div class="caption">A: Trinacria with traditional red and yellow stripes</div>
-  </div>
-  <div class="alt-flag">
-    <img src="sicilian-american-flag-B.svg" alt="Flag Design B">
-    <div class="caption">B: Trinacria and Archimedes spiral with red/yellow stripes</div>
-  </div>
-  <div class="alt-flag">
-    <img src="sicilian-american-flag-C.svg" alt="Flag Design C">
-    <div class="caption">C: Trinacria with red and white USA-style stripes</div>
-  </div>
-  <div class="alt-flag">
-    <img src="sicilian-american-flag-D.svg" alt="Flag Design D">
-    <div class="caption">D: Cross and Trinacria with red and white USA-style stripes</div>
+  <p>Below are four alternate flag concepts incorporating other aspects of Sicilian symbolism. These are presented for public feedback and inspiration.</p>
+  <div class="alternate-flags">
+    <div class="alt-flag">
+      <img src="sicilian-american-flag-A.svg" alt="Flag A">
+      <p><strong>Design A:</strong> Trinacria with red and yellow stripes</p>
+    </div>
+    <div class="alt-flag">
+      <img src="sicilian-american-flag-B.svg" alt="Flag B">
+      <p><strong>Design B:</strong> Trinacria and Archimedes spiral with red/yellow stripes</p>
+    </div>
+    <div class="alt-flag">
+      <img src="sicilian-american-flag-C.svg" alt="Flag C">
+      <p><strong>Design C:</strong> Trinacria with red and white stripes, USA style</p>
+    </div>
+    <div class="alt-flag">
+      <img src="sicilian-american-flag-D.svg" alt="Flag D">
+      <p><strong>Design D:</strong> Cross and Trinacria with red and white stripes</p>
+    </div>
   </div>
 
   <h2>Explore the Religious Inspiration</h2>
