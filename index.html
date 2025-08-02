@@ -1,14 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Sicilian-American Flag</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
       margin: 0;
-      background: #f4f8ff;
+      background: #f3f7ff;
       color: #222;
     }
     header {
@@ -33,7 +35,7 @@
       text-align: center;
     }
     nav a {
-      color: #cc9900;
+      color: navy;
       text-decoration: none;
       margin: 0 1rem;
       font-weight: 600;
@@ -46,29 +48,19 @@
       margin: 0 auto;
       padding: 2rem 1rem;
     }
-    .flag-box {
+    .flag-box, .alt-flag {
       max-width: 720px;
       margin: 1rem auto;
     }
-    .flag-box img {
+    .flag-box img, .alt-flag img {
       width: 100%;
       height: auto;
       box-shadow: 0 3px 10px rgba(0,0,0,0.25);
     }
-    .alternate-flags {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-    .alternate-flags figure {
+    .caption {
       text-align: center;
-      margin: 0;
-    }
-    .alternate-flags img {
-      width: 100%;
-      height: auto;
-      border: 1px solid #ccc;
+      font-size: 0.95rem;
+      margin-top: 0.5rem;
     }
     table {
       border-collapse: collapse;
@@ -127,6 +119,24 @@
     <tr><td><strong>Central red stripe</strong></td><td>Palermo's legacy of resilience, revolution, and identity</td></tr>
   </table>
 
+  <h2>Alternate Designs</h2>
+  <div class="alt-flag">
+    <img src="sicilian-american-flag-A.svg" alt="Flag Design A">
+    <div class="caption">A: Trinacria with traditional red and yellow stripes</div>
+  </div>
+  <div class="alt-flag">
+    <img src="sicilian-american-flag-B.svg" alt="Flag Design B">
+    <div class="caption">B: Trinacria and Archimedes spiral with red/yellow stripes</div>
+  </div>
+  <div class="alt-flag">
+    <img src="sicilian-american-flag-C.svg" alt="Flag Design C">
+    <div class="caption">C: Trinacria with red and white USA-style stripes</div>
+  </div>
+  <div class="alt-flag">
+    <img src="sicilian-american-flag-D.svg" alt="Flag Design D">
+    <div class="caption">D: Cross and Trinacria with red and white USA-style stripes</div>
+  </div>
+
   <h2>Explore the Religious Inspiration</h2>
   <ul>
     <li><a href="https://en.wikipedia.org/wiki/Palermo_Cathedral" target="_blank">Palermo Cathedral</a></li>
@@ -134,26 +144,9 @@
     <li><a href="https://en.wikipedia.org/wiki/Cathedral_of_San_Giorgio,_Ragusa" target="_blank">San Giorgio Cathedral, Ragusa</a></li>
   </ul>
 
-  <h2>Alternate Designs</h2>
-  <p>These historic and creative alternatives explore other iconic symbols of Sicilian-American identity.</p>
-  <div class="alternate-flags">
-    <figure>
-      <img src="alternate_flags/sicilian-american-flag-A.png" alt="Version A">
-      <figcaption><strong>A.</strong> Trinacria with red/yellow stripes</figcaption>
-    </figure>
-    <figure>
-      <img src="alternate_flags/sicilian-american-flag-B.png" alt="Version B">
-      <figcaption><strong>B.</strong> Trinacria & Archimedean spiral with red/yellow</figcaption>
-    </figure>
-    <figure>
-      <img src="alternate_flags/sicilian-american-flag-C.png" alt="Version C">
-      <figcaption><strong>C.</strong> Trinacria with red & white stripes (USA style)</figcaption>
-    </figure>
-    <figure>
-      <img src="alternate_flags/sicilian-american-flag-D.png" alt="Version D">
-      <figcaption><strong>D.</strong> Trinacria + cross with red & white stripes</figcaption>
-    </figure>
-  </div>
+  <h2>Downloads</h2>
+  <a href="sicilian-american-flag.svg" download>Download SVG</a> | 
+  <a href="sicilian-american-flag.png" download>Download PNG</a>
 </section>
 
 <footer>
