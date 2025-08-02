@@ -8,11 +8,11 @@
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
       margin: 0;
-      background: #f2f7ff;
+      background: #f4f8ff;
       color: #222;
     }
     header {
-      background: #eef2f9;
+      background: #fff;
       color: navy;
       padding: 1.5rem 1rem;
       text-align: center;
@@ -33,7 +33,7 @@
       text-align: center;
     }
     nav a {
-      color: navy;
+      color: #cc9900;
       text-decoration: none;
       margin: 0 1rem;
       font-weight: 600;
@@ -55,6 +55,21 @@
       height: auto;
       box-shadow: 0 3px 10px rgba(0,0,0,0.25);
     }
+    .alternate-flags {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .alternate-flags figure {
+      text-align: center;
+      margin: 0;
+    }
+    .alternate-flags img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+    }
     table {
       border-collapse: collapse;
       width: 100%;
@@ -65,7 +80,7 @@
       padding: 0.6rem;
     }
     th {
-      background: #f4f7fb;
+      background: #f3f3f3;
       text-align: left;
     }
     footer {
@@ -73,7 +88,7 @@
       text-align: center;
       padding: 1rem;
       color: navy;
-      border-top: 1px solid #d0d8e0;
+      border-top: 1px solid #e0e0e0;
       margin-top: 2rem;
     }
   </style>
@@ -119,9 +134,26 @@
     <li><a href="https://en.wikipedia.org/wiki/Cathedral_of_San_Giorgio,_Ragusa" target="_blank">San Giorgio Cathedral, Ragusa</a></li>
   </ul>
 
-  <h2>Downloads</h2>
-  <a href="sicilian-american-flag.svg" download>Download SVG</a> | 
-  <a href="sicilian-american-flag.png" download>Download PNG</a>
+  <h2>Alternate Designs</h2>
+  <p>These historic and creative alternatives explore other iconic symbols of Sicilian-American identity.</p>
+  <div class="alternate-flags">
+    <figure>
+      <img src="alternate_flags/sicilian-american-flag-A.png" alt="Version A">
+      <figcaption><strong>A.</strong> Trinacria with red/yellow stripes</figcaption>
+    </figure>
+    <figure>
+      <img src="alternate_flags/sicilian-american-flag-B.png" alt="Version B">
+      <figcaption><strong>B.</strong> Trinacria & Archimedean spiral with red/yellow</figcaption>
+    </figure>
+    <figure>
+      <img src="alternate_flags/sicilian-american-flag-C.png" alt="Version C">
+      <figcaption><strong>C.</strong> Trinacria with red & white stripes (USA style)</figcaption>
+    </figure>
+    <figure>
+      <img src="alternate_flags/sicilian-american-flag-D.png" alt="Version D">
+      <figcaption><strong>D.</strong> Trinacria + cross with red & white stripes</figcaption>
+    </figure>
+  </div>
 </section>
 
 <footer>

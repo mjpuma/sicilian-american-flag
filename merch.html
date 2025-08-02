@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Merch Store - Sicilian-American Flag</title>
+  <title>Sicilian-American Flag - Merch Store</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
       margin: 0;
-      background: #f2f7ff;
+      background: #f4f8ff;
       color: #222;
     }
     header {
-      background: #eef2f9;
+      background: #fff;
       color: navy;
       padding: 1.5rem 1rem;
       text-align: center;
@@ -33,7 +33,7 @@
       text-align: center;
     }
     nav a {
-      color: navy;
+      color: #cc9900;
       text-decoration: none;
       margin: 0 1rem;
       font-weight: 600;
@@ -46,45 +46,29 @@
       margin: 0 auto;
       padding: 2rem 1rem;
     }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
     .product {
       border: 1px solid #ccc;
-      background: #fff;
-      border-radius: 6px;
       padding: 1rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      background: white;
     }
     .product img {
       width: 100%;
-      max-width: 400px;
-      height: auto;
-      display: block;
-      margin: 0 auto 1rem;
+      max-height: 150px;
+      object-fit: contain;
     }
     .product h3 {
-      margin-top: 0;
-      color: navy;
+      font-size: 1rem;
+      margin: 0.5rem 0;
     }
-    .buy-button {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.5rem 1rem;
-      background: navy;
-      color: white;
-      text-decoration: none;
-      border-radius: 4px;
-      font-weight: bold;
-    }
-    .buy-button:hover {
-      background: #003366;
-    }
-    footer {
+    .product p {
       font-size: 0.9rem;
-      text-align: center;
-      padding: 1rem;
-      color: navy;
-      border-top: 1px solid #d0d8e0;
-      margin-top: 2rem;
+      color: #666;
     }
   </style>
 </head>
@@ -92,7 +76,7 @@
 
 <header>
   <img src="sicilian-american-flag.png" class="flag-icon" alt="Sicilian-American Flag">
-  <h1>Sicilian-American Flag</h1>
+  <h1>Merch Store</h1>
   <img src="Flag_of_the_United_States.svg" class="flag-icon" alt="United States Flag">
 </header>
 
@@ -102,41 +86,30 @@
 </nav>
 
 <section>
-  <p><em>Support the Sicilian-American flag initiative by proudly displaying our heritage on flags, shirts, pins, and more. Made with care. Inspired by history.</em></p>
-
-  <div class="product">
-    <h3>3x5 Outdoor Flag (Polyester)</h3>
-    <img src="coming-soon.png" alt="Coming Soon">
-    <p>Durable, all-weather flag with stitched edges and grommets. Great for homes, balconies, or classrooms.</p>
-    <a href="#" class="buy-button">Coming Soon</a>
+  <h2>Coming Soon</h2>
+  <div class="product-grid">
+    <div class="product">
+      <img src="alternate_flags/sicilian-american-flag-A.png" alt="Flag A">
+      <h3>Flag A – Red/Yellow Stripes (Trinacria)</h3>
+      <p>Coming soon</p>
+    </div>
+    <div class="product">
+      <img src="alternate_flags/sicilian-american-flag-B.png" alt="Flag B">
+      <h3>Flag B – Trinacria + Spiral (Red/Yellow)</h3>
+      <p>Coming soon</p>
+    </div>
+    <div class="product">
+      <img src="alternate_flags/sicilian-american-flag-C.png" alt="Flag C">
+      <h3>Flag C – Trinacria with Red/White Stripes</h3>
+      <p>Coming soon</p>
+    </div>
+    <div class="product">
+      <img src="alternate_flags/sicilian-american-flag-D.png" alt="Flag D">
+      <h3>Flag D – Cross + Trinacria with Red/White</h3>
+      <p>Coming soon</p>
+    </div>
   </div>
-
-  <div class="product">
-    <h3>T-Shirts</h3>
-    <img src="coming-soon.png" alt="Coming Soon">
-    <p>100% cotton unisex shirts featuring the flag across the chest or on the sleeve. Available in red, navy, or white.</p>
-    <a href="#" class="buy-button">Coming Soon</a>
-  </div>
-
-  <div class="product">
-    <h3>Enamel Pins</h3>
-    <img src="coming-soon.png" alt="Coming Soon">
-    <p>Classic hard enamel pins—perfect for backpacks, hats, or jackets. Approx. 1.25 inches wide.</p>
-    <a href="#" class="buy-button">Coming Soon</a>
-  </div>
-
-  <div class="product">
-    <h3>Embroidered Hats</h3>
-    <img src="coming-soon.png" alt="Coming Soon">
-    <p>Structured baseball-style caps with embroidered flag design on the front. Adjustable back strap.</p>
-    <a href="#" class="buy-button">Coming Soon</a>
-  </div>
-
 </section>
-
-<footer>
-  Designed by Michael J. Puma · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY‑SA 4.0</a>
-</footer>
 
 </body>
 </html>
