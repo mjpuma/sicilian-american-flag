@@ -8,7 +8,7 @@
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
       margin: 0;
-      background: #fdf6ee;
+      background: #fdf8f2;
       color: #222;
     }
     header {
@@ -46,31 +46,27 @@
       margin: 0 auto;
       padding: 2rem 1rem;
     }
-    .flag-box {
+    .flag-box, .alt-flags {
       max-width: 720px;
       margin: 1rem auto;
     }
-    .flag-box img {
+    .flag-box img, .alt-flags img {
       width: 100%;
       height: auto;
       box-shadow: 0 3px 10px rgba(0,0,0,0.25);
     }
-    .alternate-flags {
-      display: flex;
-      flex-wrap: wrap;
+    .alt-flags {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 1rem;
-      justify-content: center;
-      margin-top: 2rem;
     }
-    .alt-flag {
-      flex: 1 1 calc(50% - 1rem);
+    .alt-flags figure {
+      margin: 0;
       text-align: center;
     }
-    .alt-flag img {
-      width: 100%;
-      max-width: 300px;
-      height: auto;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    figure figcaption {
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
     }
     table {
       border-collapse: collapse;
@@ -98,7 +94,7 @@
 <body>
 
 <header>
-  <img src="sicilian-american-flag.png" class="flag-icon" alt="Sicilian-American Flag">
+  <img src="sicilian-american-flag.svg" class="flag-icon" alt="Sicilian-American Flag">
   <h1>Sicilian-American Flag</h1>
   <img src="Flag_of_the_United_States.svg" class="flag-icon" alt="United States Flag">
 </header>
@@ -109,46 +105,45 @@
 </nav>
 
 <section class="flag-box">
-  <img src="sicilian-american-flag.png" alt="Sicilian-American Flag">
+  <img src="sicilian-american-flag.svg" alt="Main Sicilian-American Flag">
 </section>
 
 <section>
   <p><em>“Uniting Sicilian faith and resilience with American liberty, this flag honors heritage, faith, and the freedom to thrive.”</em></p>
 
   <h2>Introduction</h2>
-  <p>The Sicilian-American flag blends the island’s enduring Catholic and cultural heritage with the freedoms secured across the Atlantic. The deep blue canton represents liberty and the American journey—across both space and time. A white Baroque-style sunburst radiates with divine light, recalling altarpieces in Palermo, Ragusa, and Noto. A small cross at its center symbolizes Sicily’s deep Christian roots dating to the earliest days of the faith.</p>
-
-  <p>Below the canton, nine stripes represent the nine historic provinces of Sicily—Palermo, Messina, Catania, Agrigento, Trapani, Siracusa, Enna, Caltanissetta, and Ragusa. The central red stripe pays tribute to Palermo, the heart of the island and of past revolutions. These stripes also evoke Sicily’s maritime traditions—fishing, trade, and transatlantic migration that brought so many to the American shores in search of freedom and opportunity.</p>
+  <p>This version of the Sicilian-American flag integrates bold Palermo red stripes and a golden cross-Trinacria set against a blue canton that mirrors the United States flag. The design evokes strength, sacred tradition, and the journey across the sea toward freedom.</p>
+  <p>The golden Trinacria cross—adapted to emphasize Sicily’s Christian heritage—radiates against USA blue, symbolizing faith carried across the ocean. The red and white stripes represent the nine historic Sicilian provinces and also echo the visual rhythm of the American flag, grounding this design in both origin and destination.</p>
 
   <h2>Symbolism at a Glance</h2>
   <table>
     <tr><th>Element</th><th>Meaning</th></tr>
-    <tr><td><strong>Blue canton</strong></td><td>American liberty and Sicilian independence; the long journey across the sea</td></tr>
-    <tr><td><strong>White sunburst with cross</strong></td><td>Divine light, Sicilian Christianity, Baroque religious art from Palermo, Ragusa, Noto</td></tr>
-    <tr><td><strong>Nine stripes</strong></td><td>Nine historic provinces of Sicily; alternating blue and white for maritime heritage</td></tr>
-    <tr><td><strong>Central red stripe</strong></td><td>Palermo's legacy of resilience, revolution, and identity</td></tr>
+    <tr><td><strong>Blue canton</strong></td><td>Liberty, American journey, Sicilian independence</td></tr>
+    <tr><td><strong>Golden Trinacria cross</strong></td><td>Christianity, Sicily's ancient identity, renewal of faith</td></tr>
+    <tr><td><strong>Red and white stripes</strong></td><td>Palermo red and symbolic white for maritime history and the nine provinces</td></tr>
   </table>
 
-  <h2>Alternate Designs</h2>
-  <p>Below are four alternate flag concepts incorporating other aspects of Sicilian symbolism. These are presented for public feedback and inspiration.</p>
-  <div class="alternate-flags">
-    <div class="alt-flag">
+  <h2>Alternate Flag Concepts</h2>
+  <p>Below are four alternate designs that highlight variations in symbolism and layout:</p>
+
+  <section class="alt-flags">
+    <figure>
       <img src="sicilian-american-flag-A.svg" alt="Flag A">
-      <p><strong>Design A:</strong> Trinacria with red and yellow stripes</p>
-    </div>
-    <div class="alt-flag">
+      <figcaption>A. Trinacria, 9 alternating red/yellow stripes (Sicilian Vespers-inspired)</figcaption>
+    </figure>
+    <figure>
       <img src="sicilian-american-flag-B.svg" alt="Flag B">
-      <p><strong>Design B:</strong> Trinacria and Archimedes spiral with red/yellow stripes</p>
-    </div>
-    <div class="alt-flag">
+      <figcaption>B. Trinacria + Archimedes spiral, 9 red/yellow stripes</figcaption>
+    </figure>
+    <figure>
       <img src="sicilian-american-flag-C.svg" alt="Flag C">
-      <p><strong>Design C:</strong> Trinacria with red and white stripes, USA style</p>
-    </div>
-    <div class="alt-flag">
+      <figcaption>C. Trinacria with red/white USA-style stripes</figcaption>
+    </figure>
+    <figure>
       <img src="sicilian-american-flag-D.svg" alt="Flag D">
-      <p><strong>Design D:</strong> Cross and Trinacria with red and white stripes</p>
-    </div>
-  </div>
+      <figcaption>D. Cross-Trinacria with red/white USA-style stripes</figcaption>
+    </figure>
+  </section>
 
   <h2>Explore the Religious Inspiration</h2>
   <ul>
