@@ -139,15 +139,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1600"
-     inkscape:window-height="926"
+     inkscape:window-width="1112"
+     inkscape:window-height="687"
      id="namedview25850"
      showgrid="false"
-     inkscape:zoom="3.224348"
-     inkscape:cx="102.96655"
-     inkscape:cy="82.962509"
-     inkscape:window-x="61"
-     inkscape:window-y="174"
+     inkscape:zoom="0.68614875"
+     inkscape:cx="8.0157545"
+     inkscape:cy="144.28358"
+     inkscape:window-x="195"
+     inkscape:window-y="30"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg25848"
      inkscape:document-rotation="0"
@@ -1106,7 +1106,7 @@
      height="44.439999"
      fill="#DC143C"
      id="rect25826-93"
-     style="fill:#003878;fill-opacity:1" />
+     style="fill:#ec1b23;fill-opacity:1" />
   <rect
      x="1"
      y="45.440002"
@@ -1114,7 +1114,7 @@
      height="44.439999"
      fill="#FFD700"
      id="rect25828-8"
-     style="fill:#ffffff;fill-opacity:1" />
+     style="fill:#fff100;fill-opacity:1" />
   <rect
      x="1"
      y="89.880005"
@@ -1122,7 +1122,7 @@
      height="44.439999"
      fill="#DC143C"
      id="rect25830-3"
-     style="fill:#003878;fill-opacity:1" />
+     style="fill:#ec1b23;fill-opacity:1" />
   <rect
      x="1"
      y="134.32001"
@@ -1130,7 +1130,7 @@
      height="44.439999"
      fill="#FFD700"
      id="rect25832-8"
-     style="fill:#ffffff;fill-opacity:1" />
+     style="fill:#fff100;fill-opacity:1" />
   <rect
      x="1"
      y="178.76001"
@@ -1138,7 +1138,7 @@
      height="44.439999"
      fill="#DC143C"
      id="rect25834-7"
-     style="fill:#a6192e;fill-opacity:1" />
+     style="fill:#ec1b23;fill-opacity:1" />
   <rect
      x="1"
      y="223.20001"
@@ -1146,7 +1146,7 @@
      height="44.439999"
      fill="#FFD700"
      id="rect25836-0"
-     style="fill:#ffffff;fill-opacity:1" />
+     style="fill:#fff100;fill-opacity:1" />
   <rect
      x="1"
      y="267.64005"
@@ -1154,7 +1154,7 @@
      height="44.439999"
      fill="#DC143C"
      id="rect25838-86"
-     style="fill:#043a7a;fill-opacity:1" />
+     style="fill:#ec1b23;fill-opacity:1" />
   <rect
      x="1"
      y="312.08002"
@@ -1162,7 +1162,7 @@
      height="44.439999"
      fill="#FFD700"
      id="rect25840-3"
-     style="fill:#ffffff;fill-opacity:1" />
+     style="fill:#fff100;fill-opacity:1" />
   <rect
      x="1"
      y="356.52002"
@@ -1170,7 +1170,7 @@
      height="44.48"
      fill="#DC143C"
      id="rect25842-5"
-     style="fill:#043a7a;fill-opacity:1" />
+     style="fill:#ec1b23;fill-opacity:1" />
   <rect
      x="1"
      y="1"
