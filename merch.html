@@ -81,7 +81,66 @@
       border-top: 1px solid #e0e0e0;
       margin-top: 2rem;
     }
-  </style>
+  
+    /* Alternates grid (mirrors index) */
+    .alternates-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      align-items: start;
+    }
+    figure {
+      background: #fff;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+      padding: 0.5rem;
+      margin: 0;
+    }
+    figure.featured {
+      border-width: 2px;
+      border-color: #0A3161;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+    figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    figure .alt-label {
+      font-size: 0.8rem;
+      color: #0A3161;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.25rem;
+    }
+    figure figcaption {
+      font-size: 0.95rem;
+      line-height: 1.35;
+      margin-top: 0.35rem;
+    }
+    .alt-actions {
+      margin-top: 0.4rem;
+      font-size: 0.9rem;
+    }
+    .alt-actions a {
+      text-decoration: none;
+    }
+    .alt-actions a:hover { text-decoration: underline; }
+
+
+    /* Spacing tweaks for Alternates on merch page */
+    #alternates { margin-top: 1.25rem; margin-bottom: 2rem; }
+    #alternates h2 { margin-bottom: 0.5rem; }
+    #alternates p { margin-top: 0; margin-bottom: 1rem; }
+    .alternates-grid { gap: 1.25rem; }
+    figure { padding: 0.75rem; }
+    figure figcaption { margin-top: 0.5rem; }
+    .alt-actions { margin-top: 0.5rem; }
+    /* Give breathing room before the first product after alternates */
+    #alternates + .product { margin-top: 2rem; }
+
+</style>
 </head>
 <body>
 
@@ -102,7 +161,47 @@
   <p><em>Main design:</em> USA‑blue canton bearing a gold cross‑Trinacria; field of Palermo‑red and white
   stripes (nine) honoring the historic provinces and the shared Sicilian‑American story.</p>
 
-  <div class="product">
+  
+<section id="alternates">
+  <h2>Alternates</h2>
+  <p>Designs <strong>A</strong> and <strong>D</strong> are highlighted as <strong>featured alternates</strong>.</p>
+  <div class="alternates-grid">
+    <figure class="featured">
+<img alt="Flag A" src="sicilian-american-flag-A.svg"/>
+<figcaption><div class="alt-label">Featured alternate</div>A. Trinacria with nine red/yellow stripes (Palermo red + Corleone yellow — classic Sicilian palette); nine stripes acknowledge the historic provinces; the device preserves motion and identity.</figcaption>
+<div class="alt-actions">
+<a download="" href="sicilian-american-flag-A.svg">Download SVG</a> ·
+        <a download="" href="sicilian-american-flag-A.png">Download PNG</a>
+</div>
+</figure>
+    <figure>
+<img alt="Flag D" src="sicilian-american-flag-D.svg"/>
+<figcaption>D. Additional concept — Cross + Trinacria with red/white USA-style stripes</figcaption>
+<div class="alt-actions">
+<a download="" href="sicilian-american-flag-D.svg">Download SVG</a> ·
+        <a download="" href="sicilian-american-flag-D.png">Download PNG</a>
+</div>
+</figure>
+    <figure>
+<img alt="Flag B" src="sicilian-american-flag-B.svg"/>
+<figcaption>B. Additional concept — Trinacria + Archimedes spiral with red/yellow stripes</figcaption>
+<div class="alt-actions">
+<a download="" href="sicilian-american-flag-B.svg">Download SVG</a> ·
+        <a download="" href="sicilian-american-flag-B.png">Download PNG</a>
+</div>
+</figure>
+    <figure>
+<img alt="Flag C" src="sicilian-american-flag-C.svg"/>
+<figcaption>C. Additional concept — Trinacria with red/white USA-style stripes</figcaption>
+<div class="alt-actions">
+<a download="" href="sicilian-american-flag-C.svg">Download SVG</a> ·
+        <a download="" href="sicilian-american-flag-C.png">Download PNG</a>
+</div>
+</figure>
+  </div>
+</section>
+
+<div class="product">
     <h2>3x5 Flag (Main Design)</h2>
     <p class="coming-soon">Coming soon</p>
   </div>
