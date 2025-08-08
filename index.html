@@ -1,164 +1,128 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
+<meta charset="utf-8" />
 <title>Sicilian-American Flag</title>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <style>
-    :root{
-      --usa-blue:#0A3161;          /* canton: Old Glory Blue (PMS 282C) */
-      --palermo-red:#C8102E;       /* stripes */
-      --sacred-gold:#D4AF37;       /* cross-trinacria / Corleone yellow */
-      --flag-white:#FFFFFF;        /* white stripes/device */
-      --page-cream:#FDF8F2;        /* site background */
-    }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-      margin: 0;
-      background: var(--page-cream);
-      color: #222;
-    }
-    header {
-      background: #f9f9f9;
-      color: navy;
-      padding: 1.5rem 1rem;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 1rem;
-    }
-    header img.flag-icon { height: 40px; }
-    header h1 { margin: 0; font-size: 2.2rem; }
+  :root{
+    --usa-blue:#0A3161;          /* canton: Old Glory Blue (PMS 282C) */
+    --palermo-red:#C8102E;       /* stripes */
+    --sacred-gold:#D4AF37;       /* cross-trinacria / Corleone yellow */
+    --flag-white:#FFFFFF;        /* white stripes/device */
+    --page-cream:#FDF8F2;        /* site background */
+  }
+  /* Base */
+  html,body { height: 100%; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    background: var(--page-cream);
+    color: #1f2937;
+    line-height: 1.5;
+  }
+  a{ color: var(--usa-blue); }
 
-    nav { margin: 1rem; text-align: center; }
-    nav a {
-      color: var(--sacred-gold);
-      text-decoration: none;
-      margin: 0 1rem;
-      font-weight: 600;
-    }
-    nav a:hover { text-decoration: underline; }
+  /* Header */
+  header {
+    background: #f9fafb;
+    color: #0b2a55;
+    padding: 1.25rem 1rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: .75rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  header h1 { margin: 0; font-size: clamp(1.6rem, 2.4vw, 2.2rem); letter-spacing: .2px; }
+  header img.flag-icon { height: 40px; justify-self: end; }
+  header img.flag-icon:last-child{ justify-self: start; }
 
-    section { max-width: 860px; margin: 0 auto; padding: 2rem 1rem; }
-    .flag-box { max-width: 720px; margin: 1rem auto; }
-    .flag-box img {
-      width: 100%; height: auto;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.25);
-    }
+  /* Nav */
+  nav { margin: .5rem 0 1rem; text-align: center; }
+  nav a {
+    color: var(--sacred-gold);
+    text-decoration: none;
+    margin: 0 .75rem;
+    font-weight: 600;
+  }
+  nav a:hover { text-decoration: underline; }
 
-    table { border-collapse: collapse; width: 100%; margin: 2rem 0; }
-    th, td { border: 1px solid #ccc; padding: 0.6rem; }
-    th { background: #f3f3f3; text-align: left; }
+  /* Sections */
+  section { max-width: 920px; margin: 0 auto; padding: 2rem 1rem; }
+  .flag-box { max-width: 780px; margin: 1rem auto; }
+  .flag-box img {
+    width: 100%; height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 14px rgba(0,0,0,.18);
+  }
 
-    /* Alternates: 2×2 grid */
-    .alt-flags {
-      max-width: 720px;
-      margin: 1rem auto 0;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-    }
-    .alt-flags figure { margin: 0; text-align: center; }
-    .alt-flags img {
-      width: 100%; height: auto;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-    }
-    .alt-flags figcaption { margin-top: 0.5rem; font-size: 0.95rem; }
-    .alt-actions { margin-top: 0.4rem; font-size: 0.9rem; }
-    .alt-actions a { margin: 0 0.25rem; }
+  /* Tables */
+  table { border-collapse: collapse; width: 100%; margin: 1.5rem 0; background:#fff; border-radius:8px; overflow:hidden; }
+  th, td { border: 1px solid #e5e7eb; padding: .65rem .7rem; }
+  th { background: #f3f4f6; text-align: left; }
 
-    /* Featured alternate styling for Design A */
-    .alt-flags .featured {
-      border: 2px solid var(--sacred-gold);
-      border-radius: 8px;
-      padding: 0.5rem;
-      background: #fffdf4;
-    }
-    .alt-label {
-      display: inline-block;
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.02em;
-      color: #8a6d00;
-      background: #fff1b8;
-      border: 1px solid #e6c75a;
-      border-radius: 4px;
-      padding: 0.15rem 0.35rem;
-      margin-bottom: 0.3rem;
-    }
+  /* Alternates grid */
+  .alt-flags {
+    max-width: 920px;
+    margin: 1rem auto 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+  }
+  .alt-flags figure {
+    margin: 0; background:#fff; border-radius: 10px; border:1px solid #e5e7eb; overflow:hidden; display:flex; flex-direction:column; }
+  .alt-flags img { width: 100%; height: auto; display:block; }
+  .alt-body { padding: .75rem .85rem; }
+  .alt-flags figcaption { font-size: .95rem; }
+  .alt-actions { margin-top: .45rem; font-size: .9rem; }
+  .alt-actions a { margin-right: .4rem; }
 
-    footer {
-      font-size: 0.9rem;
-      text-align: center;
-      padding: 1rem;
-      color: navy;
-      border-top: 1px solid #e0e0e0;
-      margin-top: 2rem;
-    }
-  
-/* Emphasize the featured alternate (Option 1) */
-.alt-flags .featured {
-  border: 2px solid var(--sacred-gold);
-  border-radius: 10px;
-  padding: 0.75rem;
-  background: #fffdf4;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
-}
-.alt-flags .featured img {
-  transform: scale(1.04);
-  transform-origin: center;
-}
-.alt-flags .featured figcaption {
-  font-weight: 600;
-}
+  /* Featured styling */
+  .featured { box-shadow: 0 6px 18px rgba(0,0,0,.15); border-color: #f0d77a; }
+  .badge {
+    display:inline-block; font-size:.78rem; font-weight:700; letter-spacing:.02em; color:#8a6d00;
+    background:#fff1b8; border:1px solid #e6c75a; border-radius:999px; padding:.18rem .5rem; margin-bottom:.35rem;
+  }
 
-    /* Scripture callout box */
-    .callout {
-      border: 1px solid #e6c75a;
-      border-left: 6px solid var(--sacred-gold);
-      background: #fffdf4;
-      border-radius: 10px;
-      padding: 1rem 1.25rem;
-      margin: 1rem 0 1.25rem 0;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-    }
-    .callout .verse {
-      margin: 0 0 .35rem 0;
-      font-style: italic;
-      line-height: 1.5;
-    }
-    .callout .context {
-      margin: 0.2rem 0 0;
-      color: #334155;
-      font-size: 0.95rem;
-    }
-    .callout .credit {
-      margin-top: 0.5rem;
-      font-size: 0.82rem;
-      color: #64748b;
-    }
+  /* Callout */
+  .callout {
+    border: 1px solid #e6c75a; border-left: 6px solid var(--sacred-gold);
+    background: #fffdf4; border-radius: 10px; padding: 1rem 1.25rem; margin: 1rem 0 1.25rem 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  }
+  .callout .verse { margin: 0 0 .35rem 0; font-style: italic; }
+  .callout .context { margin: .2rem 0 0; color: #334155; font-size: .95rem; }
+  .callout .credit { margin-top: .5rem; font-size: .82rem; color: #64748b; }
 
+  /* Footer */
+  footer { font-size: .95rem; text-align: center; padding: 1.25rem; color: #0b2a55; border-top: 1px solid #e5e7eb; margin-top: 2rem; }
+
+  /* Small helper */
+  .muted { color:#6b7280; }
 </style>
 </head>
 <body>
 <header>
-<img alt="Sicilian-American Flag" class="flag-icon" src="sicilian-american-flag.svg"/>
-<h1>Sicilian-American Flag</h1>
-<img alt="United States Flag" class="flag-icon" src="Flag_of_the_United_States.svg"/>
+  <img class="flag-icon" src="sicilian-american-flag.svg" alt="Sicilian-American Flag icon" />
+  <h1>Sicilian-American Flag</h1>
+  <img class="flag-icon" src="Flag_of_the_United_States.svg" alt="United States Flag icon" />
 </header>
-<nav>
-<a href="index.html">Home</a>
-<a href="merch.html">Merch Store</a>
+<nav aria-label="Primary">
+  <a href="index.html" aria-current="page">Home</a>
+  <a href="merch.html">Merch&nbsp;Store</a>
 </nav>
-<section class="flag-box">
-<img alt="Main Sicilian-American Flag" src="sicilian-american-flag.svg"/>
+
+<section class="flag-box" aria-labelledby="main-flag">
+  <img src="sicilian-american-flag.svg" alt="Main Sicilian-American Flag" />
 </section>
+
 <section>
-<p><em>“Uniting Sicilian faith and resilience with American liberty, this flag honors heritage, faith, and the freedom to thrive.”</em></p>
-<h2>Introduction</h2>
-<p>
+  <p><em>“Uniting Sicilian faith and resilience with American liberty, this flag honors heritage, faith, and the freedom to thrive.”</em></p>
+
+  <h2 id="intro">Introduction</h2>
+  <p>
     This Sicilian-American flag brings together three anchors of identity:
     <em>place, faith, and journey</em>. A <strong>USA-blue canton</strong> carries a
     <strong>gold cross-Trinacria</strong>, while the field is composed of
@@ -167,8 +131,9 @@
     unmistakably Sicilian in meaning. The red–gold pairing also speaks to the
     modern Sicilian flag’s palette that honors Palermo and Corleone.
   </p>
-<h3>The Cross-Trinacria (Gold)</h3>
-<p>
+
+  <h3>The Cross-Trinacria (Gold)</h3>
+  <p>
     The Trinacria—three running legs—comes from the island’s ancient Greek name
     <em>Trinakría</em> (“three capes”: Peloro, Boeo, Passero). Rendered here in a restrained,
     heraldic form, it expresses motion, resilience, and the triangular geography of Sicily.
@@ -177,144 +142,178 @@
     sunlight, wheat and abundance, and the gold grounds of the island’s celebrated mosaics.
     <strong>Gold/yellow also references Corleone; paired with Palermo red it echoes the red–yellow
     tradition of the modern Sicilian flag.</strong>
-</p>
-<div class="callout" role="note" aria-label="Sicily in the New Testament">
-  <p class="verse">“We put in at <strong>Syracuse</strong> and stayed there three days.” — <em>Acts 28:12</em> (NABRE).</p>
-  <p class="context">This brief stop on Paul’s voyage links Sicily to the earliest Christian journeys and underlies the flag’s cross.</p>
-  <p class="credit">New American Bible, Revised Edition (NABRE) © 2010, 1991, 1986, 1970 Confraternity of Christian Doctrine, Washington, DC. All rights reserved.</p>
-</div>
+  </p>
 
-<h3>USA-Blue Canton</h3>
-<p>
+  <div class="callout" role="note" aria-label="Sicily in the New Testament">
+    <p class="verse">“We put in at <strong>Syracuse</strong> and stayed there three days.” — <em>Acts 28:12</em> (NABRE).</p>
+    <p class="context">This brief stop on Paul’s voyage links Sicily to the earliest Christian journeys and underlies the flag’s cross.</p>
+    <p class="credit">New American Bible, Revised Edition (NABRE) © 2010, 1991, 1986, 1970 Confraternity of Christian Doctrine, Washington, DC. All rights reserved.</p>
+  </div>
+
+  <h3>USA-Blue Canton</h3>
+  <p>
     Placed in the American position (upper hoist), the canton declares the promise that drew
     generations across the Atlantic: liberty, law, and opportunity. Its blue converses with the
     U.S. flag while providing clear contrast for the gold device.
   </p>
-<h3>Palermo-Red &amp; White Stripes (Nine)</h3>
-<p>
+
+  <h3>Palermo-Red &amp; White Stripes (Nine)</h3>
+  <p>
     The field carries <strong>nine horizontal stripes</strong>—for Palermo, Messina, Catania, Agrigento,
     Trapani, Siracusa, Enna, Caltanissetta, and Ragusa. <strong>Palermo red</strong> draws on the capital’s
     civic tradition and memory of revolution; <strong>white</strong> introduces clarity and hope. Together they
     echo the cadence of the American flag while remaining rooted in Sicilian color symbolism and
     maritime history.
   </p>
-<h3>How to Read the Flag</h3>
-<p>
+
+  <h3>How to Read the Flag</h3>
+  <p>
     From hoist to fly, the eye moves from the <strong>canton</strong> (origin and faith carried forward),
     across the <strong>stripes</strong> (the people and provinces), to the <strong>open field</strong> (the ongoing journey).
     The balance keeps the dialogue between Sicily and America alive in a single, cohesive banner.
   </p>
-<h2>Symbolism at a Glance</h2>
-<table>
-<tr><th>Element</th><th>Meaning</th></tr>
-<tr>
-<td><strong>USA-blue canton</strong></td>
-<td>Liberty, law, and the American journey that welcomed Sicilians across the Atlantic.</td>
-</tr>
-<tr>
-<td><strong>Gold cross-Trinacria</strong></td>
-<td>Three capes of Sicily (motion and resilience) united by the Cross (faith and renewal); gold for sun, wheat, and mosaic light; <strong>Corleone yellow paired with Palermo red, as on the modern Sicilian flag.</strong></td>
-</tr>
-<tr>
-<td><strong>Nine stripes (Palermo red &amp; white)</strong></td>
-<td>Nine historic provinces; a dialogue with the American flag’s rhythm; clarity, courage, and community.</td>
-</tr>
-</table>
-<h2>Alternate Designs</h2>
-<p>Below are historical/creative variations. Designs <strong>D</strong> and <strong>A</strong> are highlighted as <strong>featured alternates</strong>.</p>
 
-<div class="alt-flags">
-<figure class="featured">
-<img alt="Flag D" src="sicilian-american-flag-D.svg"/>
-<figcaption>Alternate 2 (D). Cross‑Trinacria in <strong>Palermo red</strong>, with <strong>blue/white USA‑style stripes</strong> and a <strong>gold canton</strong> (Corleone yellow). A unique, high‑contrast look that foregrounds Sicilian heritage while reading instantly American—from distance or on screens.</figcaption>
-<div class="alt-actions">
-<a download="" href="sicilian-american-flag-D.svg">Download SVG</a> ·
-        <a download="" href="sicilian-american-flag-D.png">Download PNG</a>
-</div>
-</figure>
-<img alt="Flag A" src="sicilian-american-flag-A.svg"/>
-<figcaption>Alternate 1 (A). <div class="alt-label">Featured alternate</div>A. Trinacria with nine red/yellow stripes (Palermo red + Corleone yellow — classic Sicilian palette); nine stripes acknowledge the historic provinces; the device preserves motion and identity.</figcaption>
-<div class="alt-actions">
-<a download="" href="sicilian-american-flag-A.svg">Download SVG</a> ·
-        <a download="" href="sicilian-american-flag-A.png">Download PNG</a>
-    
-</div>
-</figure>
-<figure>
-<img alt="Flag B" src="sicilian-american-flag-B.svg"/>
-<figcaption>Alternate 3 (B). Additional concept — Trinacria + Archimedes spiral with red/yellow stripes</figcaption>
-<div class="alt-actions">
-<a download="" href="sicilian-american-flag-B.svg">Download SVG</a> ·
-        <a download="" href="sicilian-american-flag-B.png">Download PNG</a>
+  <h2>Symbolism at a Glance</h2>
+  <table aria-label="Symbolism table">
+    <tr><th>Element</th><th>Meaning</th></tr>
+    <tr>
+      <td><strong>USA-blue canton</strong></td>
+      <td>Liberty, law, and the American journey that welcomed Sicilians across the Atlantic.</td>
+    </tr>
+    <tr>
+      <td><strong>Gold cross-Trinacria</strong></td>
+      <td>Three capes of Sicily (motion and resilience) united by the Cross (faith and renewal); gold for sun, wheat, and mosaic light; <strong>Corleone yellow paired with Palermo red, as on the modern Sicilian flag.</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Nine stripes (Palermo red &amp; white)</strong></td>
+      <td>Nine historic provinces; a dialogue with the American flag’s rhythm; clarity, courage, and community.</td>
+    </tr>
+  </table>
 
-</div>
-</figure>
-<figure>
-<img alt="Flag C" src="sicilian-american-flag-C.svg"/>
-<figcaption>Alternate 4 (C). Additional concept — Trinacria with red/white USA-style stripes</figcaption>
-<div class="alt-actions">
-<a download="" href="sicilian-american-flag-C.svg">Download SVG</a> ·
-        <a download="" href="sicilian-american-flag-C.png">Download PNG</a>
+  <h2>Alternate Designs</h2>
+  <p>Below are historical/creative variations. Designs <strong>D</strong> and <strong>A</strong> are highlighted as <strong>featured alternates</strong>.</p>
 
-</div>
-</figure>
-</div>
-<h2>Explore the Religious Inspiration</h2>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Palermo_Cathedral" target="_blank">Palermo Cathedral</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Noto_Cathedral" target="_blank">Noto Cathedral</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Duomo_of_San_Giorgio,_Ragusa" target="_blank">San Giorgio Cathedral, Ragusa</a></li>
-</ul>
-<h2>Color Specs (Draft for Production)</h2>
-<p>Use these values for web and as a starting point for print. <strong>CMYK and Pantone are approximations</strong>; always soft-proof with your vendor and adjust to the substrate.</p>
-<table>
-<tr><th>Element</th><th>Hex</th><th>RGB</th><th>CMYK (approx.)</th><th>Pantone guide (approx.)</th></tr>
-<tr>
-<td>USA Blue (canton)</td>
-<td><code>#0A3161</code></td>
-<td>RGB 10, 49, 97</td>
-<td>CMYK 100, 68, 0, 54</td>
-<td>Pantone 282 C</td>
-</tr>
-<tr>
-<td>Palermo Red (stripes)</td>
-<td><code>#C8102E</code></td>
-<td>RGB 200, 16, 46</td>
-<td>CMYK 0, 92, 77, 22</td>
-<td>Close to 186 C</td>
-</tr>
-<tr>
-<td>Sacred Gold / Corleone Yellow (device)</td>
-<td><code>#D4AF37</code></td>
-<td>RGB 212, 175, 55</td>
-<td>CMYK 0, 17, 74, 17</td>
-<td>Non-metallic: near 124 C / 7409 C range</td>
-</tr>
-<tr>
-<td>Flag White</td>
-<td><code>#FFFFFF</code></td>
-<td>RGB 255, 255, 255</td>
-<td>CMYK 0, 0, 0, 0</td>
-<td>—</td>
-</tr>
-<tr>
-<td>Site Cream (background)</td>
-<td><code>#FDF8F2</code></td>
-<td>RGB 253, 248, 242</td>
-<td>CMYK 1, 2, 3, 0</td>
-<td>—</td>
-</tr>
-</table>
-<p style="font-size:0.95rem">
+  <div class="alt-flags">
+    <!-- D (Featured) -->
+    <figure class="featured">
+      <img src="sicilian-american-flag-D.svg" alt="Alternate D: Cross‑Trinacria in Palermo red, blue/white USA‑style stripes, gold canton" />
+      <div class="alt-body">
+        <div class="badge" aria-label="Featured alternate">Featured alternate</div>
+        <figcaption>
+          <strong>Alternate 2 (D).</strong> Cross‑Trinacria in <strong>Palermo red</strong>, with <strong>blue/white USA‑style stripes</strong> and a <strong>gold canton</strong> (Corleone yellow). A unique, high‑contrast look that foregrounds Sicilian heritage while reading instantly American—from distance or on screens.
+        </figcaption>
+        <div class="alt-actions">
+          <a href="sicilian-american-flag-D.svg" download>Download SVG</a>
+          <a href="sicilian-american-flag-D.png" download>Download PNG</a>
+        </div>
+      </div>
+    </figure>
+
+    <!-- A (Featured) -->
+    <figure class="featured">
+      <img src="sicilian-american-flag-A.svg" alt="Alternate A: Trinacria with nine red/yellow stripes (Palermo red + Corleone yellow)" />
+      <div class="alt-body">
+        <div class="badge" aria-label="Featured alternate">Featured alternate</div>
+        <figcaption>
+          <strong>Alternate 1 (A).</strong> Trinacria with nine red/yellow stripes (Palermo red + Corleone yellow — classic Sicilian palette); nine stripes acknowledge the historic provinces; the device preserves motion and identity.
+        </figcaption>
+        <div class="alt-actions">
+          <a href="sicilian-american-flag-A.svg" download>Download SVG</a>
+          <a href="sicilian-american-flag-A.png" download>Download PNG</a>
+        </div>
+      </div>
+    </figure>
+
+    <!-- B -->
+    <figure>
+      <img src="sicilian-american-flag-B.svg" alt="Alternate B: Trinacria + Archimedes spiral with red/yellow stripes" />
+      <div class="alt-body">
+        <figcaption>
+          <strong>Alternate 3 (B).</strong> Additional concept — Trinacria + Archimedes spiral with red/yellow stripes.
+        </figcaption>
+        <div class="alt-actions">
+          <a href="sicilian-american-flag-B.svg" download>Download SVG</a>
+          <a href="sicilian-american-flag-B.png" download>Download PNG</a>
+        </div>
+      </div>
+    </figure>
+
+    <!-- C -->
+    <figure>
+      <img src="sicilian-american-flag-C.svg" alt="Alternate C: Trinacria with red/white USA‑style stripes" />
+      <div class="alt-body">
+        <figcaption>
+          <strong>Alternate 4 (C).</strong> Additional concept — Trinacria with red/white USA‑style stripes.
+        </figcaption>
+        <div class="alt-actions">
+          <a href="sicilian-american-flag-C.svg" download>Download SVG</a>
+          <a href="sicilian-american-flag-C.png" download>Download PNG</a>
+        </div>
+      </div>
+    </figure>
+  </div>
+
+  <h2>Explore the Religious Inspiration</h2>
+  <ul>
+    <li><a href="https://en.wikipedia.org/wiki/Palermo_Cathedral" target="_blank" rel="noopener">Palermo Cathedral</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Noto_Cathedral" target="_blank" rel="noopener">Noto Cathedral</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Duomo_of_San_Giorgio,_Ragusa" target="_blank" rel="noopener">San Giorgio Cathedral, Ragusa</a></li>
+  </ul>
+
+  <h2>Color Specs (Draft for Production)</h2>
+  <p>Use these values for web and as a starting point for print. <strong>CMYK and Pantone are approximations</strong>; always soft-proof with your vendor and adjust to the substrate.</p>
+  <table aria-label="Color specs table">
+    <tr><th>Element</th><th>Hex</th><th>RGB</th><th>CMYK (approx.)</th><th>Pantone guide (approx.)</th></tr>
+    <tr>
+      <td>USA Blue (canton)</td>
+      <td><code>#0A3161</code></td>
+      <td>RGB 10, 49, 97</td>
+      <td>CMYK 100, 68, 0, 54</td>
+      <td>Pantone 282 C</td>
+    </tr>
+    <tr>
+      <td>Palermo Red (stripes)</td>
+      <td><code>#C8102E</code></td>
+      <td>RGB 200, 16, 46</td>
+      <td>CMYK 0, 92, 77, 22</td>
+      <td>Close to 186 C</td>
+    </tr>
+    <tr>
+      <td>Sacred Gold / Corleone Yellow (device)</td>
+      <td><code>#D4AF37</code></td>
+      <td>RGB 212, 175, 55</td>
+      <td>CMYK 0, 17, 74, 17</td>
+      <td>Non-metallic: near 124 C / 7409 C range</td>
+    </tr>
+    <tr>
+      <td>Flag White</td>
+      <td><code>#FFFFFF</code></td>
+      <td>RGB 255, 255, 255</td>
+      <td>CMYK 0, 0, 0, 0</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Site Cream (background)</td>
+      <td><code>#FDF8F2</code></td>
+      <td>RGB 253, 248, 242</td>
+      <td>CMYK 1, 2, 3, 0</td>
+      <td>—</td>
+    </tr>
+  </table>
+  <p class="muted">
     Note: “Sacred Gold” is tuned to print as a rich yellow that references <strong>Corleone</strong>;
     together with <strong>Palermo red</strong> it aligns with the red–yellow tradition of the Sicilian flag.
   </p>
-<h2>Downloads</h2>
-<a download="" href="sicilian-american-flag.svg">Download SVG</a> ·
-  <a download="" href="sicilian-american-flag.png">Download PNG</a>
+
+  <h2>Downloads</h2>
+  <p>
+    <a href="sicilian-american-flag.svg" download>Download SVG</a> ·
+    <a href="sicilian-american-flag.png" download>Download PNG</a>
+  </p>
 </section>
+
 <footer>
-  Designed by Michael J. Puma · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>
+  Designed by Michael J. Puma · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>
 </footer>
 </body>
 </html>
