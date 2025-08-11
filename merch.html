@@ -1,101 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Sicilian-American Flag Merch</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    :root{
-      --usa-blue:#0A3161;          /* canton: Old Glory Blue (PMS 282C) */
-      --palermo-red:#C8102E;       /* stripes */
-      --sacred-gold:#D4AF37;       /* cross-trinacria / Corleone yellow */
-      --flag-white:#FFFFFF;        /* white stripes/device */
-      --page-cream:#FDF8F2;        /* site background */
-    }
+<meta charset="utf-8" />
+<title>Sicilian-American Flag — Merch</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Shop the Sicilian-American flag: premium flags, stickers, pins, and patches." />
+<style>
+  :root{
+    --usa-blue:#0A3161;
+    --palermo-red:#C8102E;
+    --sacred-gold:#D4AF37;
+    --flag-white:#FFFFFF;
+    --page-cream:#FDF8F2;
+  }
+  html,body{ height:100%; }
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    margin:0; background:var(--page-cream); color:#1f2937; line-height:1.6;
+  }
+  a{ color:var(--usa-blue); }
 
-    /* Base */
-    html, body { height: 100%; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      margin: 0;
-      background: var(--page-cream);
-      color: #1f2937;
-      line-height: 1.5;
-    }
-    a { color: var(--usa-blue); }
+  header{
+    background:#f9fafb; color:#0b2a55; padding:1.25rem 1rem; text-align:center;
+    display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:.75rem;
+    border-bottom:1px solid #e5e7eb;
+  }
+  header h1{ margin:0; font-size:clamp(1.4rem,2.2vw,2rem); }
+  header img.flag-icon{ height:40px; justify-self:end; }
+  header img.flag-icon:last-child{ justify-self:start; }
 
-    /* Header */
-    header {
-      background: #f9fafb;
-      color: #0b2a55;
-      padding: 1.25rem 1rem;
-      text-align: center;
-      display: grid;
-      grid-template-columns: 1fr auto 1fr;
-      align-items: center;
-      gap: .75rem;
-      border-bottom: 1px solid #e5e7eb;
-    }
-    header h1 { margin: 0; font-size: clamp(1.6rem, 2.4vw, 2.2rem); letter-spacing: .2px; }
-    header img.flag-icon { height: 40px; justify-self: end; }
-    header img.flag-icon:last-child{ justify-self: start; }
+  nav{ margin:.5rem 0 1rem; text-align:center; }
+  nav a{ color:var(--sacred-gold); text-decoration:none; margin:0 .75rem; font-weight:600; }
+  nav a:hover{ text-decoration:underline; }
 
-    /* Nav */
-    nav { margin: .5rem 0 1rem; text-align: center; }
-    nav a {
-      color: var(--sacred-gold);
-      text-decoration: none;
-      margin: 0 .75rem;
-      font-weight: 600;
-    }
-    nav a:hover { text-decoration: underline; }
+  section{ max-width:1080px; margin:0 auto; padding:2rem 1rem; }
+  .lead{ max-width:820px; margin:0 auto 1rem; }
 
-    /* Layout */
-    section { max-width: 960px; margin: 0 auto; padding: 2rem 1rem; }
+  .hero{ max-width:820px; margin:1rem auto; }
+  .hero picture,.hero img{
+    width:100%; height:auto; display:block; border-radius:4px; box-shadow:0 4px 14px rgba(0,0,0,.18);
+  }
 
-    /* Hero / main product */
-    .hero {
-      display: grid; grid-template-columns: 1fr; gap: 1rem;
-      max-width: 860px; margin: 0 auto 1.5rem;
-      background:#fff; border:1px solid #e5e7eb; border-radius: 10px; overflow:hidden;
-      box-shadow: 0 6px 18px rgba(0,0,0,.12);
-    }
-    .hero img { width: 100%; height: auto; display:block; }
-    .hero-body { padding: 1rem 1.25rem; }
-    .hero h2 { margin: 0 0 .25rem 0; }
-    .hero .muted { color:#6b7280; font-size:.95rem; }
+  .grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:1rem; }
+  .card{
+    background:#fff; border:1px solid #e5e7eb; border-radius:12px; overflow:hidden;
+    display:flex; flex-direction:column; box-shadow:0 2px 8px rgba(0,0,0,.06);
+  }
+  .card img{ width:100%; height:auto; display:block; }
+  .body{ padding:.9rem 1rem; }
+  .title{ margin:0 0 .2rem 0; font-weight:700; font-size:1.05rem; }
+  .price{ margin:.25rem 0; font-weight:600; color:#111827; }
+  .meta{ font-size:.92rem; color:#374151; }
+  .actions{ margin-top:.6rem; display:flex; gap:.5rem; flex-wrap:wrap; }
+  .btn{
+    display:inline-block; padding:.5rem .75rem; border-radius:8px; text-decoration:none; font-weight:700;
+    background:var(--usa-blue); color:#fff;
+  }
+  .btn.alt{ background:var(--sacred-gold); color:#111827; }
+  .muted{ color:#6b7280; font-size:.9rem; margin-top:.35rem; }
 
-    /* Products grid */
-    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 1rem; }
-    .card { background:#fff; border:1px solid #e5e7eb; border-radius: 10px; overflow:hidden; box-shadow: 0 2px 8px rgba(0,0,0,.08); display:flex; flex-direction:column; }
-    .card .media { background:#ffffff; display:flex; align-items:center; justify-content:center; min-height: 150px; }
-    .card img { max-width: 100%; height:auto; display:block; }
-    .card .body { padding: .9rem 1rem; display:flex; flex-direction:column; gap:.4rem; }
-    .card h3 { margin:.1rem 0; font-size:1.05rem; }
-    .pill { display:inline-block; font-size:.8rem; color:#8a6d00; background:#fff1b8; border:1px solid #e6c75a; border-radius:999px; padding:.15rem .5rem; }
-    .soon { font-style: italic; color:#6b7280; }
-
-    /* Alternates (mirrors index) */
-    #alternates { margin-top: 2.25rem; }
-    .alternates-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; align-items: start; }
-    figure { background:#fff; border:1px solid #e5e7eb; border-radius: 10px; overflow:hidden; margin:0; box-shadow: 0 2px 8px rgba(0,0,0,.06); display:flex; flex-direction:column; }
-    figure img { width:100%; height:auto; display:block; }
-    .alt-body { padding:.75rem .9rem; }
-    .alt-label { display:inline-block; font-size:.78rem; font-weight:700; letter-spacing:.02em; color:#8a6d00; background:#fff1b8; border:1px solid #e6c75a; border-radius:999px; padding:.18rem .5rem; margin-bottom:.35rem; }
-    figure.featured { border-color:#f0d77a; box-shadow: 0 6px 18px rgba(0,0,0,.12); }
-    figcaption { font-size:.95rem; line-height:1.4; }
-    .alt-actions { margin-top:.5rem; font-size:.9rem; }
-    .alt-actions a { margin-right:.5rem; }
-
-    /* Footer */
-    footer { font-size: .95rem; text-align: center; padding: 1.25rem; color: #0b2a55; border-top: 1px solid #e5e7eb; margin-top: 2rem; }
-  </style>
+  footer{ font-size:.95rem; text-align:center; padding:1.25rem; color:#0b2a55; border-top:1px solid #e5e7eb; margin-top:2rem; }
+</style>
 </head>
 <body>
 <header>
-  <img src="sicilian-american-flag.svg" class="flag-icon" alt="Sicilian-American Flag icon" />
-  <h1>Merchandise</h1>
-  <img src="Flag_of_the_United_States.svg" class="flag-icon" alt="United States Flag icon" />
+  <img class="flag-icon" src="siclian-american-flag-tri.svg" alt="Flag icon" />
+  <h1>Merch Store</h1>
+  <img class="flag-icon" src="Flag_of_the_United_States.svg" alt="US flag icon" />
 </header>
 
 <nav aria-label="Primary">
@@ -104,126 +75,89 @@
 </nav>
 
 <section>
-  <p><strong>About this design:</strong> USA‑blue canton bearing a gold cross‑Trinacria; field of Palermo‑red and white stripes (nine) honoring the historic Sicilian provinces and the shared Sicilian‑American story.</p>
+  <div class="lead">
+    Bring the <strong>Sicilian-American</strong> flag home. Premium fabric, crisp print, and the fully detailed device
+    (gold cross, traditional Trinacria, Archimedes’ spiral) in the USA-blue canton. The field uses
+    <strong>Palermo-red and white stripes</strong> for high legibility outdoors and on camera.
+  </div>
 
-  <!-- Main product hero (kept first, per request) -->
-  <article class="hero" aria-labelledby="p-flag">
-    <img src="sicilian-american-flag.png" alt="Main Sicilian-American Flag product image" />
-    <div class="hero-body">
-      <h2 id="p-flag">3×5 Flag — Main Design</h2>
-      <p class="muted">Durable outdoor polyester with reinforced grommets. Color-matched to USA Old Glory Blue, Palermo Red, and Corleone Yellow (gold device).</p>
-      <p class="soon">Coming soon</p>
-    </div>
-  </article>
+  <div class="hero">
+    <picture>
+      <source srcset="siclian-american-flag-tri.png" type="image/png" />
+      <img src="siclian-american-flag-tri.svg" alt="Sicilian-American Flag hero image" />
+    </picture>
+  </div>
 
-  <!-- Other merch -->
-  <div class="grid" aria-label="Product grid">
-    <article class="card" aria-labelledby="p-shirt">
-      <div class="media"><img src="sicilian-american-flag.svg" alt="T‑Shirt mockup placeholder (main flag crest)" /></div>
+  <h2>Flag &amp; Accessories</h2>
+  <div class="grid">
+    <!-- Flag 3x5 -->
+    <article class="card">
+      <img src="siclian-american-flag-tri.png" alt="3×5 ft Sicilian-American Flag" />
       <div class="body">
-        <h3 id="p-shirt">T‑Shirt — Main Design</h3>
-        <span class="pill">Unisex</span>
-        <p class="soon">Coming soon</p>
+        <h3 class="title">3×5 ft Flag (Outdoor)</h3>
+        <div class="price">$—</div>
+        <div class="meta">Heavy-duty polyester or nylon; double-stitched hem; two grommets; colorfast inks.</div>
+        <div class="actions">
+          <a class="btn" href="siclian-american-flag-tri.svg" download>Download SVG</a>
+          <a class="btn alt" href="siclian-american-flag-tri.png" download>Download PNG</a>
+        </div>
+        <div class="muted">Printer-ready vector and high-res raster included.</div>
       </div>
     </article>
 
-    <article class="card" aria-labelledby="p-hat">
-      <div class="media"><img src="sicilian-american-flag-A.svg" alt="Hat mockup placeholder (crest)" /></div>
+    <!-- Flag 2x3 -->
+    <article class="card">
+      <img src="siclian-american-flag-tri.png" alt="2×3 ft Sicilian-American Flag" />
       <div class="body">
-        <h3 id="p-hat">Embroidered Hat — Main Design</h3>
-        <span class="pill">Low‑profile</span>
-        <p class="soon">Coming soon</p>
+        <h3 class="title">2×3 ft Flag (Outdoor)</h3>
+        <div class="price">$—</div>
+        <div class="meta">Compact size for small poles or indoor display; same materials and stitching.</div>
+        <div class="actions">
+          <a class="btn" href="siclian-american-flag-tri.svg" download>Download SVG</a>
+          <a class="btn alt" href="siclian-american-flag-tri.png" download>Download PNG</a>
+        </div>
       </div>
     </article>
 
-    <article class="card" aria-labelledby="p-pin">
-      <div class="media"><img src="sicilian-american-flag-D.svg" alt="Enamel pin mockup placeholder" /></div>
+    <!-- Sticker pack -->
+    <article class="card">
+      <img src="siclian-american-flag-tri.png" alt="Sticker pack" />
       <div class="body">
-        <h3 id="p-pin">Enamel Pin — Main Design</h3>
-        <span class="pill">1.25″</span>
-        <p class="soon">Coming soon</p>
+        <h3 class="title">Stickers (Matte/Vinyl)</h3>
+        <div class="price">$—</div>
+        <div class="meta">Die-cut options for the full flag and the canton device.</div>
+        <div class="actions">
+          <a class="btn" href="siclian-american-flag-tri.svg" download>Flag SVG</a>
+          <a class="btn alt" href="canton-only.svg" download>Canton SVG</a>
+        </div>
+        <div class="muted">Upload the canton artwork separately for round or square stickers.</div>
       </div>
     </article>
 
-    <article class="card" aria-labelledby="p-poster">
-      <div class="media"><img src="sicilian-american-flag-C.svg" alt="Poster set mockup placeholder (all designs)" /></div>
+    <!-- Pins (canton only) -->
+    <article class="card">
+      <img src="canton-only.png" alt="Canton enamel pin (placeholder)" />
       <div class="body">
-        <h3 id="p-poster">Poster Set — All 5 Designs</h3>
-        <span class="pill">Set of five</span>
-        <p class="soon">Coming soon</p>
+        <h3 class="title">Enamel Pin (Canton)</h3>
+        <div class="price">$—</div>
+        <div class="meta">Gold metal finish; hard enamel; butterfly clasp. <em>(You’ll add final canton art.)</em></div>
+        <div class="actions">
+          <a class="btn" href="canton-only.svg" download>Canton SVG</a>
+          <a class="btn alt" href="canton-only.png" download>Canton PNG</a>
+        </div>
       </div>
     </article>
   </div>
 
-  <!-- Alternates (below main products, per request) -->
-  <section id="alternates" aria-labelledby="alt-heading">
-    <h2 id="alt-heading">Featured Alternates & Downloads</h2>
-    <p>Designs <strong>A</strong> and <strong>D</strong> are highlighted as <strong>featured alternates</strong>. Download production‑ready files below.</p>
-
-    <div class="alternates-grid">
-      <!-- A (Featured) -->
-      <figure class="featured">
-        <img src="sicilian-american-flag-A.svg" alt="Alternate A: Trinacria with nine red/yellow stripes (Palermo red + Corleone yellow)" />
-        <div class="alt-body">
-          <div class="alt-label" aria-label="Featured alternate">Featured alternate</div>
-          <figcaption>
-            <strong>Alternate 1 (A).</strong> Trinacria with nine red/yellow stripes (Palermo red + Corleone yellow — classic Sicilian palette); nine stripes acknowledge the historic provinces; the device preserves motion and identity.
-          </figcaption>
-          <div class="alt-actions">
-            <a href="sicilian-american-flag-A.svg" download>Download SVG</a>
-            <a href="sicilian-american-flag-A.png" download>Download PNG</a>
-          </div>
-        </div>
-      </figure>
-
-      <!-- D (Featured) -->
-      <figure class="featured">
-        <img src="sicilian-american-flag-D.svg" alt="Alternate D: Cross‑Trinacria in Palermo red, blue/white USA‑style stripes, gold canton" />
-        <div class="alt-body">
-          <div class="alt-label" aria-label="Featured alternate">Featured alternate</div>
-          <figcaption>
-            <strong>Alternate 2 (D).</strong> Cross‑Trinacria in <strong>Palermo red</strong>, with <strong>blue/white USA‑style stripes</strong> and a <strong>gold canton</strong> (Corleone yellow). A unique, high‑contrast look that foregrounds Sicilian heritage while reading instantly American—from distance or on screens.
-          </figcaption>
-          <div class="alt-actions">
-            <a href="sicilian-american-flag-D.svg" download>Download SVG</a>
-            <a href="sicilian-american-flag-D.png" download>Download PNG</a>
-          </div>
-        </div>
-      </figure>
-
-      <!-- B -->
-      <figure>
-        <img src="sicilian-american-flag-B.svg" alt="Alternate B: Trinacria + Archimedes spiral with red/yellow stripes" />
-        <div class="alt-body">
-          <figcaption>
-            <strong>Alternate 3 (B).</strong> Additional concept — Trinacria + Archimedes spiral with red/yellow stripes.
-          </figcaption>
-          <div class="alt-actions">
-            <a href="sicilian-american-flag-B.svg" download>Download SVG</a>
-            <a href="sicilian-american-flag-B.png" download>Download PNG</a>
-          </div>
-        </div>
-      </figure>
-
-      <!-- C -->
-      <figure>
-        <img src="sicilian-american-flag-C.svg" alt="Alternate C: Trinacria with red/white USA‑style stripes" />
-        <div class="alt-body">
-          <figcaption>
-            <strong>Alternate 4 (C).</strong> Additional concept — Trinacria with red/white USA‑style stripes.
-          </figcaption>
-          <div class="alt-actions">
-            <a href="sicilian-american-flag-C.svg" download>Download SVG</a>
-            <a href="sicilian-american-flag-C.png" download>Download PNG</a>
-          </div>
-        </div>
-      </figure>
-    </div>
-  </section>
+  <h2>Production Note</h2>
+  <p>
+    This edition uses <strong>white stripes</strong> for clarity and the device in <strong>gold</strong> for Sicilian warmth. If you ever release a
+    yellow-stripe variant, invert the device to white for contrast.
+  </p>
 </section>
 
 <footer>
-  Designed by Michael J. Puma · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY‑SA 4.0</a>
+  Designed by Michael J. Puma · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>
 </footer>
 </body>
 </html>
