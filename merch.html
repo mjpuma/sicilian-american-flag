@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <title>Sicilian-American Flag — Merch</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="Shop the Sicilian-American flag: premium flags, stickers, and lapel pins (Spiral, Cross, Trinacria). White stripes with gold device." />
+<meta name="description" content="Shop the Sicilian-American flag: premium flags, stickers, pins, and patches." />
 <style>
   :root{
     --usa-blue:#0A3161;
@@ -15,43 +15,33 @@
   }
   html,body{ height:100%; }
   body{
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     margin:0; background:var(--page-cream); color:#1f2937; line-height:1.6;
   }
   a{ color:var(--usa-blue); }
 
-  /* Header */
   header{
     background:#f9fafb; color:#0b2a55; padding:1.25rem 1rem; text-align:center;
     display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:.75rem;
     border-bottom:1px solid #e5e7eb;
   }
-  header h1{ margin:0; font-size:clamp(1.4rem, 2.2vw, 2rem); }
+  header h1{ margin:0; font-size:clamp(1.4rem,2.2vw,2rem); }
   header img.flag-icon{ height:40px; justify-self:end; }
   header img.flag-icon:last-child{ justify-self:start; }
 
-  /* Nav */
-  nav { margin:.5rem 0 1rem; text-align:center; }
-  nav a {
-    color: var(--sacred-gold);
-    text-decoration: none;
-    margin: 0 .75rem;
-    font-weight: 600;
-  }
-  nav a:hover { text-decoration: underline; }
+  nav{ margin:.5rem 0 1rem; text-align:center; }
+  nav a{ color:var(--sacred-gold); text-decoration:none; margin:0 .75rem; font-weight:600; }
+  nav a:hover{ text-decoration:underline; }
 
-  /* Sections */
   section{ max-width:1080px; margin:0 auto; padding:2rem 1rem; }
   .lead{ max-width:820px; margin:0 auto 1rem; }
 
-  /* Hero */
   .hero{ max-width:820px; margin:1rem auto; }
   .hero picture,.hero img{
     width:100%; height:auto; display:block; border-radius:4px; box-shadow:0 4px 14px rgba(0,0,0,.18);
   }
 
-  /* Grid */
-  .grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:1rem; }
+  .grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:1rem; }
   .card{
     background:#fff; border:1px solid #e5e7eb; border-radius:12px; overflow:hidden;
     display:flex; flex-direction:column; box-shadow:0 2px 8px rgba(0,0,0,.06);
@@ -61,16 +51,22 @@
   .title{ margin:0 0 .2rem 0; font-weight:700; font-size:1.05rem; }
   .price{ margin:.25rem 0; font-weight:600; color:#111827; }
   .meta{ font-size:.92rem; color:#374151; }
-  .smallnote{ font-size:.85rem; color:#6b7280; margin-top:.35rem; }
   .actions{ margin-top:.6rem; display:flex; gap:.5rem; flex-wrap:wrap; }
   .btn{
     display:inline-block; padding:.5rem .75rem; border-radius:8px; text-decoration:none; font-weight:700;
     background:var(--usa-blue); color:#fff;
   }
   .btn.alt{ background:var(--sacred-gold); color:#111827; }
+  .muted{ color:#6b7280; font-size:.9rem; margin-top:.35rem; }
 
-  /* Footer */
   footer{ font-size:.95rem; text-align:center; padding:1.25rem; color:#0b2a55; border-top:1px solid #e5e7eb; margin-top:2rem; }
+
+  /* Special sizing for pin previews */
+  .card.pin-card img {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+  }
 </style>
 </head>
 <body>
@@ -104,7 +100,7 @@
   <div class="grid">
     <!-- Flag 3x5 -->
     <article class="card">
-      <img src="sicilian-american-flag-tri.png" alt="3×5 ft Sicilian-American Flag" />
+      <img src="sicilian-american-flag-tri.svg" alt="3×5 ft Sicilian-American Flag" />
       <div class="body">
         <h3 class="title">3×5 ft Flag (Outdoor)</h3>
         <div class="price">$—</div>
@@ -113,13 +109,12 @@
           <a class="btn" href="sicilian-american-flag-tri.svg" download>Download SVG</a>
           <a class="btn alt" href="sicilian-american-flag-tri.png" download>Download PNG</a>
         </div>
-        <div class="smallnote">Printer-ready vector and high-res raster included.</div>
       </div>
     </article>
 
     <!-- Flag 2x3 -->
     <article class="card">
-      <img src="sicilian-american-flag-tri.png" alt="2×3 ft Sicilian-American Flag" />
+      <img src="sicilian-american-flag-tri.svg" alt="2×3 ft Sicilian-American Flag" />
       <div class="body">
         <h3 class="title">2×3 ft Flag (Outdoor)</h3>
         <div class="price">$—</div>
@@ -133,68 +128,62 @@
 
     <!-- Sticker pack -->
     <article class="card">
-      <img src="sicilian-american-flag-tri.png" alt="Sticker pack" />
+      <img src="sicilian-american-flag-tri.svg" alt="Sticker pack" />
       <div class="body">
         <h3 class="title">Stickers (Matte/Vinyl)</h3>
         <div class="price">$—</div>
-        <div class="meta">Die-cut options for the full flag and for the canton device.</div>
+        <div class="meta">Die-cut options for the full flag and the canton device.</div>
         <div class="actions">
           <a class="btn" href="sicilian-american-flag-tri.svg" download>Flag SVG</a>
           <a class="btn alt" href="canton-only.svg" download>Canton SVG</a>
         </div>
-        <div class="smallnote">Upload the canton artwork separately for round or square stickers.</div>
       </div>
     </article>
 
-    <!-- Pins (three lapel variants) -->
-    <article class="card">
-      <img src="pin-spiral.png" alt="Archimedes Spiral lapel pin (preview)" />
+    <!-- Pin: Spiral -->
+    <article class="card pin-card">
+      <img src="pin-spiral-21mm.svg" alt="Archimedes Spiral lapel pin" />
       <div class="body">
         <h3 class="title">Lapel Pin — Spiral</h3>
         <div class="price">$—</div>
-        <div class="meta">Gold metal finish; hard enamel; butterfly clasp.</div>
+        <div class="meta">~21 mm wide; gold metal finish; hard enamel; butterfly clasp.</div>
         <div class="actions">
-          <a class="btn" href="pin-spiral.svg" download>SVG</a>
-          <a class="btn alt" href="pin-spiral.png" download>PNG</a>
+          <a class="btn" href="pin-spiral-21mm.svg" download>Download SVG</a>
         </div>
-        <div class="smallnote">Actual size: ~22&nbsp;mm (0.87″) — ideal for lapels.</div>
       </div>
     </article>
 
-    <article class="card">
-      <img src="pin-cross.png" alt="Cross lapel pin (preview)" />
+    <!-- Pin: Cross -->
+    <article class="card pin-card">
+      <img src="pin-cross-21mm.svg" alt="Cross lapel pin" />
       <div class="body">
         <h3 class="title">Lapel Pin — Cross</h3>
         <div class="price">$—</div>
-        <div class="meta">Gold metal finish; hard enamel; butterfly clasp.</div>
+        <div class="meta">~21 mm wide; gold metal finish; hard enamel; butterfly clasp.</div>
         <div class="actions">
-          <a class="btn" href="pin-cross.svg" download>SVG</a>
-          <a class="btn alt" href="pin-cross.png" download>PNG</a>
+          <a class="btn" href="pin-cross-21mm.svg" download>Download SVG</a>
         </div>
-        <div class="smallnote">Actual size: ~22&nbsp;mm (0.87″).</div>
       </div>
     </article>
 
-    <article class="card">
-      <img src="pin-trinacria.png" alt="Trinacria lapel pin (preview)" />
+    <!-- Pin: Trinacria -->
+    <article class="card pin-card">
+      <img src="pin-trinacria-21mm.svg" alt="Trinacria lapel pin" />
       <div class="body">
         <h3 class="title">Lapel Pin — Trinacria</h3>
         <div class="price">$—</div>
-        <div class="meta">Gold metal finish; hard enamel; butterfly clasp.</div>
+        <div class="meta">~21 mm wide; gold metal finish; hard enamel; butterfly clasp.</div>
         <div class="actions">
-          <a class="btn" href="pin-trinacria.svg" download>SVG</a>
-          <a class="btn alt" href="pin-trinacria.png" download>PNG</a>
+          <a class="btn" href="pin-trinacria-21mm.svg" download>Download SVG</a>
         </div>
-        <div class="smallnote">Actual size: ~22&nbsp;mm (0.87″). Simplified face lines for clarity.</div>
       </div>
     </article>
   </div>
 
   <h2>Production Note</h2>
   <p>
-    The flagship design uses <strong>white stripes</strong> for clarity and the device in <strong>gold</strong> for Sicilian warmth.
-    For lapel pins, small details are simplified to keep lines clean at ~22&nbsp;mm. If you release a yellow-stripe flag variant later,
-    invert the device to white for contrast.
+    This edition uses <strong>white stripes</strong> for clarity and the device in <strong>gold</strong> for Sicilian warmth.
+    If you ever release a yellow-stripe variant, invert the device to white for contrast.
   </p>
 </section>
 
