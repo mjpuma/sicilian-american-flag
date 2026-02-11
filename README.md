@@ -8,7 +8,7 @@ Same steps as before:
 
 1. New repo → push all files here (`index.html`, `merch.html`, SVG, PNG).
 2. Settings → Pages → Source = main / root.
-3. Visit `https://<username>.github.io/<repo>/`.
+3. Visit `https://mjpuma.github.io/sicilian-american-flag/`.
 
 ---
 
