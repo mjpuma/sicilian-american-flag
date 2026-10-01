@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1000" role="img" aria-labelledby="t d">
+<title id="t">Castellammarese-American Flag</title>
+<desc id="d">Nine alternating gold and red stripes with a blue canton containing a red Castellammare tower, gold eagle and integrated gold cross.</desc>
+<rect width="1500" height="1000" fill="#D4AF37"/>
+<g fill="#C8102E">
+<rect y="111.111" width="1500" height="111.111"/><rect y="333.333" width="1500" height="111.111"/>
+<rect y="555.555" width="1500" height="111.111"/><rect y="777.777" width="1500" height="111.111"/>
+</g>
+<rect width="650" height="555.555" fill="#0A3161"/>
+<!-- gold eagle, simplified from Castellammare civic heraldry -->
+<g fill="#D4AF37" stroke="#161616" stroke-width="10" stroke-linejoin="round">
+<path d="M325 82
+c-24 7-38 23-42 48 14-9 28-13 42-13-2 16 3 30 15 42
+-46-34-99-47-154-34 29 14 48 31 58 51-36-7-70-4-102 10
+38 12 65 29 80 50-28-1-55 6-81 21 48 2 88 17 120 44
+l36-21 28 24 28-24 36 21c32-27 72-42 120-44-26-15-53-22-81-21
+15-21 42-38 80-50-32-14-66-17-102-10 10-20 29-37 58-51-55-13-108 0-154 34
+12-12 17-26 15-42 14 0 28 4 42 13-4-25-18-41-42-48z"/>
+<path d="M305 121c10-28 30-42 60-42-8 15-9 30-3 44-17-3-30 2-38 15-6-8-12-13-19-17z"/>
+<circle cx="347" cy="104" r="5" fill="#161616" stroke="none"/>
+</g>
+<!-- tower -->
+<g stroke="#161616" stroke-width="10" stroke-linejoin="round">
+<path fill="#C8102E" d="M220 255v-52h52v29h53v-29h52v29h53v-29h52v52h-22v230H242V255z"/>
+<path fill="none" d="M243 313h217M243 371h217M243 429h217M296 255v230M407 255v230"/>
+<path fill="#F2E6C9" d="M300 485v-86c0-30 25-55 55-55s55 25 55 55v86z"/>
+<path fill="#C8102E" d="M318 485v-80c0-21 17-38 37-38s37 17 37 38v80z"/>
+<!-- integrated cross -->
+<path fill="#D4AF37" stroke="none" d="M347 392h16v25h25v16h-25v39h-16v-39h-25v-16h25z"/>
+</g>
+</svg>
