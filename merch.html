@@ -115,15 +115,15 @@ footer a.archive{color:#64748b;font-size:.9rem}
     <div class="feature-grid">
       <article class="card feature">
         <div class="art flag">
-          <img src="castellammarese-american-flag-embedded.svg" alt="Castellammarese-American flag">
+          <img src="castellammarese-american-flag.svg" alt="Castellammarese-American flag with nine stripes beginning and ending with red">
         </div>
         <h3>Castellammarese-American Flag</h3>
-        <p>Nine yellow-and-red stripes with the Castle &amp; Eagle of Castellammare del Golfo in the blue canton.</p>
+        <p>Nine alternating red-and-yellow stripes, beginning and ending with red, with the Castle &amp; Eagle of Castellammare del Golfo in the blue canton.</p>
         <div class="actions">
-          <a class="btn alt" href="castellammarese-american-flag-embedded.svg" download>Download SVG</a>
-          <button class="btn" type="button" onclick="downloadEmbeddedPng('castellammarese-american-flag-embedded.svg','castellammarese-american-flag.png')">Download PNG</button>
+          <a class="btn alt" href="castellammarese-american-flag.svg" download>Download SVG</a>
+          <button class="btn" type="button" onclick="downloadSvgAsPng('castellammarese-american-flag.svg','castellammarese-american-flag.png',1536,1024)">Download PNG</button>
         </div>
-        <div class="note">The SVG contains the high-resolution PNG artwork inside it. It is convenient for compatibility, but it is not a true path-based vector file.</div>
+        <div class="note">The current flag artwork is corrected to nine stripes, beginning and ending with red. The PNG button generates a PNG directly from that corrected SVG.</div>
       </article>
 
       <article class="card feature">
@@ -230,6 +230,29 @@ footer a.archive{color:#64748b;font-size:.9rem}
 </footer>
 
 <script>
+async function downloadSvgAsPng(svgUrl, filename, width, height){
+  const svg = await fetch(svgUrl).then(r => r.text());
+  const blob = new Blob([svg], {type:'image/svg+xml'});
+  const url = URL.createObjectURL(blob);
+  const img = new Image();
+  img.onload = function(){
+    const canvas = document.createElement('canvas');
+    canvas.width = width; canvas.height = height;
+    const ctx = canvas.getContext('2d');
+    ctx.drawImage(img,0,0,width,height);
+    URL.revokeObjectURL(url);
+    canvas.toBlob(function(png){
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(png);
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); },1000);
+    },'image/png');
+  };
+  img.src = url;
+}
+
 async function downloadEmbeddedPng(svgUrl, filename){
   const svg = await fetch(svgUrl).then(r => r.text());
   const m = svg.match(/href="(data:image\/png;base64,[^"]+)"/);
