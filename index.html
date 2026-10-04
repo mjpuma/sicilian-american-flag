@@ -14,8 +14,9 @@ main{max-width:980px;margin:auto;padding:1.5rem 1rem 3rem}.hero{max-width:860px;
 .kicker{text-transform:uppercase;letter-spacing:.12em;font-size:.78rem;font-weight:800;color:#8a6818}.lead{font-size:1.12rem;color:#334155}.pull{font-size:1.08rem;border-left:4px solid var(--gold);padding:.2rem 0 .2rem 1rem;color:#334155}
 section{margin:2.4rem 0}h2{color:#0b2a55;line-height:1.25;margin-bottom:.65rem}h3{color:#0b2a55;margin:.6rem 0 .25rem}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}.card{background:white;border:1px solid var(--line);border-radius:12px;padding:1rem;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.05)}.card img{width:58%;max-height:190px;object-fit:contain}.btn{display:inline-block;margin-top:.6rem;padding:.5rem .8rem;background:var(--blue);color:white;text-decoration:none;border-radius:8px;font-weight:750}.btn.alt{background:#8c6818}.small{font-size:.9rem;color:var(--muted)}
 table{width:100%;border-collapse:collapse;background:white;border-radius:8px;overflow:hidden}th,td{border:1px solid var(--line);padding:.7rem .75rem;vertical-align:top}th{background:#0b2a55;color:white;text-align:left}tr:nth-child(even) td{background:#fafafa}.callout{background:#fffdf4;border:1px solid #e6c75a;border-left:6px solid var(--gold);padding:1rem 1.2rem;border-radius:10px}.sources{font-size:.88rem;color:var(--muted)}footer{text-align:center;border-top:1px solid var(--line);padding:1.2rem;color:#334155;background:#fafafa}footer a.archive{color:#64748b;font-size:.9rem}
-.eagle-compare{background:#fff;border:1px solid var(--line);border-radius:14px;padding:1rem 1.1rem;box-shadow:0 2px 8px rgba(0,0,0,.05)}
-.eagle-compare img{display:block;width:100%;height:auto;margin:.85rem 0;border:1px solid var(--line);border-radius:10px;background:#fff}
+.eagle-comparison{margin-top:3rem;padding-top:2rem;border-top:1px solid var(--line)}
+.eagle-comparison img{display:block;width:100%;max-width:1050px;height:auto;margin:1rem auto 1.25rem;border:1px solid var(--line);border-radius:12px;background:white}
+.eagle-comparison p{max-width:820px;margin:0 auto;color:#475569;font-size:1.02rem}
 @media(max-width:640px){main{padding-top:1rem}.card img{width:52%}}
 </style>
 </head>
@@ -32,7 +33,7 @@ table{width:100%;border-collapse:collapse;background:white;border-radius:8px;ove
 </header>
 <main>
   <section id="flag" class="hero" aria-labelledby="flag-title">
-    <img src="castellammarese-american-flag-embedded.svg?v=clean-9-red" alt="Castellammarese-American flag with a blue canton containing a red tower, gold eagle, and integrated gold cross, over nine alternating yellow and red stripes">
+    <img src="castellammarese-american-flag-embedded.svg?v=solid-canton" alt="Castellammarese-American flag with a blue canton containing a red tower, gold eagle, and integrated gold cross, over nine alternating yellow and red stripes">
   </section>
 
   <section>
@@ -103,21 +104,11 @@ table{width:100%;border-collapse:collapse;background:white;border-radius:8px;ove
     <a class="btn alt" href="castellammarese-american-flag-embedded.svg" download>Download Flag SVG</a>
     <button class="btn" type="button" onclick="downloadSvgAsPng('castellammarese-american-flag-embedded.svg','castellammarese-american-flag.png',1536,1024)">Download Flag PNG</button>
   </section>
-  <section aria-labelledby="eagle-styles-title">
-    <div class="eagle-compare">
-      <div class="kicker">Design note</div>
-      <h2 id="eagle-styles-title">Three Eagle Styles</h2>
-      <img src="three-eagle-styles.png" alt="Comparison of Castellammare, U.S. presidential, and current flag eagle styles">
-      <p>Castellammare’s eagle is sharper and more traditional. The presidential eagle is broader and more formal. The eagle on this flag sits between the two: rooted in Castellammare, but with a more American feel.</p>
-      <p class="small">This is a style comparison, not an exact reproduction of the official emblems.</p>
-    </div>
-  </section>
-
-<section id="eagle-comparison">
-    <div class="kicker">Heraldic comparison</div>
+  <section id="eagle-comparison" class="eagle-comparison">
+    <div class="kicker">Heraldic Comparison</div>
     <h2>Three Eagle Styles</h2>
-    <p>The eagle in the current flag is a modern interpretation. Castellammare’s civic eagle is narrower and more traditional in its heraldic treatment, while the U.S. presidential eagle uses a formal American federal style. The current flag eagle sits between those traditions: rooted in Castellammare’s imagery, but rendered with broader wings and a cleaner, more contemporary American feel.</p>
-    <p class="small">Comparison graphic: Castellammare civic-heraldic style · U.S. presidential/federal heraldic style · current flag eagle.</p>
+    <img src="three-eagle-styles.png?v=hires" alt="Castellammare del Golfo eagle, United States presidential eagle, and the eagle used in the Castellammarese-American flag">
+    <p>The three eagles reflect different heraldic styles. Castellammare’s eagle is more traditional and civic. The presidential eagle is more formal and American. The eagle used in this flag stands between them, drawing on Castellammare’s emblem while fitting the style of a Sicilian-American flag.</p>
   </section>
 </main>
 <footer>
