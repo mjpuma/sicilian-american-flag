@@ -69,12 +69,24 @@ section{margin:2.4rem 0}
 }
 .archive-card{margin-top:.75rem;display:grid;grid-template-columns:minmax(220px,360px) 1fr;gap:1.2rem;align-items:center}
 .archive-card img{width:100%;display:block;border-radius:10px;border:1px solid var(--line);background:white}
+.concepts{margin-top:1.1rem;padding-top:1rem;border-top:1px solid var(--line)}
+.concepts-head h3{margin:0;color:var(--navy);font-size:1rem}
+.concepts-head p{margin:.2rem 0 .7rem}
+.concept-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.65rem}
+.concept-card{
+  display:block;text-decoration:none;color:var(--navy);background:#fff;border:1px solid var(--line);
+  border-radius:10px;padding:.5rem;text-align:center;transition:transform .12s ease,box-shadow .12s ease
+}
+.concept-card:hover{transform:translateY(-1px);box-shadow:0 3px 10px rgba(15,23,42,.08)}
+.concept-card img{display:block;width:100%;aspect-ratio:3/2;object-fit:contain;background:#fafafa;border-radius:7px}
+.concept-card span{display:block;margin-top:.35rem;font-size:.8rem;font-weight:750}
 .small{font-size:.9rem;color:var(--muted)}
 footer{text-align:center;border-top:1px solid var(--line);padding:1.25rem;color:#334155;background:#fafafa}
 footer a.archive{color:#64748b;font-size:.9rem}
 @media(max-width:760px){
   .feature-grid{grid-template-columns:1fr}
   .archive-card{grid-template-columns:1fr}
+  .concept-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .art.flag{min-height:0}
 }
 </style>
@@ -180,6 +192,31 @@ footer a.archive{color:#64748b;font-size:.9rem}
             <a class="btn ghost" href="archive.html">View Archive</a>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="concepts">
+      <div class="concepts-head">
+        <h3>Other earlier concepts</h3>
+        <p class="small">A few additional designs from the development process, kept here in smaller form so they are not lost.</p>
+      </div>
+      <div class="concept-grid">
+        <a class="concept-card" href="sicilian-american-flag-A.svg" download>
+          <img src="sicilian-american-flag-A.svg" alt="Earlier Sicilian-American flag concept A">
+          <span>Concept A</span>
+        </a>
+        <a class="concept-card" href="sicilian-american-flag-B.svg" download>
+          <img src="sicilian-american-flag-B.svg" alt="Earlier Sicilian-American flag concept B">
+          <span>Concept B</span>
+        </a>
+        <a class="concept-card" href="sicilian-american-flag-C.svg" download>
+          <img src="sicilian-american-flag-C.svg" alt="Earlier Sicilian-American flag concept C">
+          <span>Concept C</span>
+        </a>
+        <a class="concept-card" href="sicilian-american-flag-D.svg" download>
+          <img src="sicilian-american-flag-D.svg" alt="Earlier Sicilian-American flag concept D">
+          <span>Concept D</span>
+        </a>
       </div>
     </div>
   </section>
