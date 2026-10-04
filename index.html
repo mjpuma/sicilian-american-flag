@@ -30,14 +30,14 @@ table{width:100%;border-collapse:collapse;background:white;border-radius:8px;ove
 </header>
 <main>
   <section id="flag" class="hero" aria-labelledby="flag-title">
-    <img src="castellammarese-american-flag-embedded.svg" alt="Castellammarese-American flag with a blue canton containing a red tower, gold eagle, and integrated gold cross, over nine alternating yellow and red stripes">
+    <img src="castellammarese-american-flag.svg" alt="Castellammarese-American flag with a blue canton containing a red tower, gold eagle, and integrated gold cross, over nine alternating yellow and red stripes">
   </section>
 
   <section>
     <p class="pull"><em>Castellammare in the canton. Sicily across nine stripes. America in the form.</em></p>
     <h2 id="flag-title">The Flag</h2>
     <p class="lead">At the heart of the blue canton are the <strong>red tower and gold eagle of Castellammare del Golfo</strong>.</p>
-    <p>The field carries <strong>nine alternating yellow-and-red stripes</strong>, representing Sicily’s nine historic provinces: Palermo, Messina, Catania, Agrigento, Trapani, Siracusa, Enna, Caltanissetta, and Ragusa. The striped field and canton preserve an American visual grammar, while the heraldry and color palette point back to Sicily.</p><p>The colors are grounded in Sicily’s official symbols. The stripes follow the same two colors specified for the official Sicilian regional flag: <strong>rosso aranciato</strong> and <strong>giallo</strong>. The canton blue is grounded in the <strong>azzurro</strong> used in Sicilian heraldry and in the regional <em>gonfalone</em>.</p>
+    <p>The field carries <strong>nine alternating red-and-yellow stripes, beginning and ending with red</strong>, representing Sicily’s nine historic provinces: Palermo, Messina, Catania, Agrigento, Trapani, Siracusa, Enna, Caltanissetta, and Ragusa. The striped field and canton preserve an American visual grammar, while the heraldry and color palette point back to Sicily.</p><p>The colors are grounded in Sicily’s official symbols. The stripes follow the same two colors specified for the official Sicilian regional flag: <strong>rosso aranciato</strong> and <strong>giallo</strong>. The canton blue is grounded in the <strong>azzurro</strong> used in Sicilian heraldry and in the regional <em>gonfalone</em>.</p>
   </section>
 
   <section>
@@ -97,9 +97,9 @@ table{width:100%;border-collapse:collapse;background:white;border-radius:8px;ove
 
   <section>
     <h2>Flag Download</h2>
-    <p>The current approved artwork is available as the high-resolution PNG master and as an SVG containing that same PNG image.</p>
-    <a class="btn alt" href="castellammarese-american-flag-embedded.svg" download>Download Flag SVG</a>
-    <button class="btn" type="button" onclick="downloadEmbeddedPng('castellammarese-american-flag-embedded.svg','castellammarese-american-flag.png')">Download Flag PNG</button>
+    <p>The current approved artwork uses nine stripes, beginning and ending with red. The SVG is downloadable directly, and the PNG download is generated from that corrected artwork.</p>
+    <a class="btn alt" href="castellammarese-american-flag.svg" download>Download Flag SVG</a>
+    <button class="btn" type="button" onclick="downloadSvgAsPng('castellammarese-american-flag.svg','castellammarese-american-flag.png',1536,1024)">Download Flag PNG</button>
   </section>
 </main>
 <footer>
@@ -107,6 +107,29 @@ table{width:100%;border-collapse:collapse;background:white;border-radius:8px;ove
   <a class="archive" href="archive.html">Earlier design archive</a>
 </footer>
 <script>
+async function downloadSvgAsPng(svgUrl, filename, width, height){
+  const svg = await fetch(svgUrl).then(r => r.text());
+  const blob = new Blob([svg], {type:'image/svg+xml'});
+  const url = URL.createObjectURL(blob);
+  const img = new Image();
+  img.onload = function(){
+    const canvas = document.createElement('canvas');
+    canvas.width = width; canvas.height = height;
+    const ctx = canvas.getContext('2d');
+    ctx.drawImage(img,0,0,width,height);
+    URL.revokeObjectURL(url);
+    canvas.toBlob(function(png){
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(png);
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); },1000);
+    },'image/png');
+  };
+  img.src = url;
+}
+
 async function downloadEmbeddedPng(svgUrl, filename){
   const svg = await fetch(svgUrl).then(r => r.text());
   const m = svg.match(/href="(data:image\/png;base64,[^"]+)"/);
