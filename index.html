@@ -90,19 +90,34 @@ table{width:100%;border-collapse:collapse;background:white;border-radius:8px;ove
         <h3>Castle &amp; Eagle</h3>
         <p>Castellammare del Golfo — hometown heritage in civic heraldry.</p>
         <a class="btn" href="castle-eagle-emblem-embedded.svg" download>Download SVG</a>
+        <button class="btn alt" type="button" onclick="downloadEmbeddedPng('castle-eagle-emblem-embedded.svg','castle-eagle-emblem.png')">Download PNG</button>
       </article>
     </div>
   </section>
 
   <section>
     <h2>Flag Download</h2>
-    <p>The current approved artwork is available as an SVG containing the approved PNG image.</p>
+    <p>The current approved artwork is available as the high-resolution PNG master and as an SVG containing that same PNG image.</p>
     <a class="btn alt" href="castellammarese-american-flag-embedded.svg" download>Download Flag SVG</a>
+    <button class="btn" type="button" onclick="downloadEmbeddedPng('castellammarese-american-flag-embedded.svg','castellammarese-american-flag.png')">Download Flag PNG</button>
   </section>
 </main>
 <footer>
   Designed by Michael J. Puma · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a><br>
   <a class="archive" href="archive.html">Earlier design archive</a>
 </footer>
+<script>
+async function downloadEmbeddedPng(svgUrl, filename){
+  const svg = await fetch(svgUrl).then(r => r.text());
+  const m = svg.match(/href="(data:image\/png;base64,[^"]+)"/);
+  if(!m){ alert('PNG data not found.'); return; }
+  const a = document.createElement('a');
+  a.href = m[1];
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+}
+</script>
 </body>
 </html>
